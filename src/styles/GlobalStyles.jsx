@@ -12,6 +12,7 @@ const GlobalStyles =createGlobalStyle`
   --bodyColor:rgba(217,217,217,1.0);
   --headingColor:rgba(255,255,255,1.0);
   --accent:rgba(78,225,160,1.0);
+  --error: rgba(255, 111, 91, 1.0);
 
 }
 
