@@ -65,6 +65,7 @@ small, .text_small {font-size: 0.8rem;}
 img, picture, svg {
   display: block;
   max-width:100%;
+  object-fit: cover;
 }
 
 `
