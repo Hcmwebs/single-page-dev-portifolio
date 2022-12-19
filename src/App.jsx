@@ -1,6 +1,6 @@
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
-import Card from './components/Card'
+import {Projects} from './components'
 import { theme, Container } from './styled'
 
 const App = () => {
@@ -8,7 +8,7 @@ const App = () => {
 		<ThemeProvider theme={theme}>
 			<Container>
 				<h1>Adam Keyes</h1>
-				<Card />
+				<Projects />
 			</Container>
 		</ThemeProvider>
 	)

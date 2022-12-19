@@ -1,11 +1,11 @@
 import React from 'react'
 import { projects } from '../data/Data'
 
-const Card = () => {
+const Projects = () => {
 	return (
 		<div>
 			{projects.map(({ id, imageLarge, title, skills, live, code }) => {
-				
+
 				return (
 					<div className='card' key={id}>
 						<img src={imageLarge} alt={title} />
@@ -38,4 +38,4 @@ const Card = () => {
 	)
 }
 
-export default Card
+export default Projects
