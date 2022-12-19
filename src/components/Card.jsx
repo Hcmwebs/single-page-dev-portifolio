@@ -4,8 +4,8 @@ import { projects } from '../data/Data'
 const Card = () => {
 	return (
 		<div>
-			{projects.map((project) => {
-				const { id, imageLarge, title, skills, link1, link2 } = project
+			{projects.map(({ id, imageLarge, title, skills, live, code }) => {
+				
 				return (
 					<div className='card' key={id}>
 						<img src={imageLarge} alt={title} />
@@ -14,9 +14,21 @@ const Card = () => {
 							<p className='skills'>{skills}</p>
 						</div>
 						<div className='cardFooter'>
-							<div className='buttons'>
-								<button className='btn'>{link1}</button>
-								<button className='btn'>{link2}</button>
+							<div className='links'>
+								<a
+									href={live}
+									target='_blank'
+									rel='noopener noreferrer'
+									className='btn'>
+									{live}
+								</a>
+								<a
+									href={code}
+									target='_blank'
+									rel='noopener noreferrer'
+									className='btn'>
+									{code}
+								</a>
 							</div>
 						</div>
 					</div>
