@@ -1,6 +1,6 @@
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
-import { Projects } from './components'
+import { Header, MainBody, Footer } from './components'
 import { theme, Container, GlobalStyles } from './styles'
 
 const App = () => {
@@ -9,9 +9,8 @@ const App = () => {
 			<GlobalStyles />
 			<Container>
 				<Header />
-				<Main />
+				<MainBody />
 				<Footer />
-				<Projects />
 			</Container>
 		</ThemeProvider>
 	)
