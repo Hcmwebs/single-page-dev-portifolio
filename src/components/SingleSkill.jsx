@@ -1,7 +1,10 @@
 import React from 'react'
 
-const SingleSkills = () => {
-	return <div>SingleSkill component here</div>
+const SingleSkill = ({title,experience}) => {
+	return <div skill-card>
+		<h2>{title}</h2>
+		<p>{experience}</p>
+	</div>
 }
 
 export default SingleSkill
