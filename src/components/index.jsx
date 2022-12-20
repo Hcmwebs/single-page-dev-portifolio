@@ -1,3 +1,4 @@
 import Projects from './Projects'
+import SingleProject from './SingleProject'
 
-export { Projects }
+export { Projects, SingleProject}
