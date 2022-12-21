@@ -1,13 +1,13 @@
 import React from 'react'
-import { NavStyled } from '../styles'
+import { StyledNav } from '../styles'
 import { Socials } from '../components'
 
 const Nav = () => {
 	return (
-		<NavStyled>
+		<StyledNav>
 			<p>adamkeyes</p>
 			<Socials />
-		</NavStyled>
+		</StyledNav>
 	)
 }
 

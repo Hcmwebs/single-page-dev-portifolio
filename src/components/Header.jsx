@@ -1,12 +1,12 @@
 import React from 'react'
-import { HeaderStyled } from '../styles'
+import { StyledHeader } from '../styles'
 import { Nav } from '../components'
 
 const Header = () => {
 	return (
-		<HeaderStyled>
+		<StyledHeader>
 			<Nav />
-		</HeaderStyled>
+		</StyledHeader>
 	)
 }
 
