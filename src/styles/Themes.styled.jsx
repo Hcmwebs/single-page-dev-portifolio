@@ -16,5 +16,11 @@ const theme = {
 		medium: 500,
 		bold: 700,
 	},
+
+	screens: {
+		mobile: '375px',
+		tablet: '768px',
+		desktop: '1440px',
+	},
 }
 export default theme
