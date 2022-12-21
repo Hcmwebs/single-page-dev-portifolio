@@ -1,12 +1,16 @@
 import styled from 'styled-components'
 
 const NavStyled = styled.nav`
+	width: 100%;
 	display: flex;
-	align-items: center;
 	justify-content: space-between;
+	align-items: center;
 	flex-direction: column;
 	gap: 1.25rem;
 	padding-block: 1rem;
+	@media (min-width: ${({ theme }) => theme.screens.tablet}) {
+		flex-direction: row;
+	}
 
 	.socials {
 		display: grid;
