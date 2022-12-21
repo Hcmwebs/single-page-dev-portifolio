@@ -1,5 +1,6 @@
 import Header from './Header'
 import Nav from './Nav'
+import Socials from './Socials'
 import Hero from './Hero'
 import MainBody from './MainBody'
 import Skills from './Skills'
@@ -12,6 +13,7 @@ import Form from './Form'
 export {
 	Header,
 	Nav,
+	Socials,
 	Hero,
 	MainBody,
 	Skills,

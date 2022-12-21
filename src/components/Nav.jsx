@@ -1,7 +1,14 @@
 import React from 'react'
+import { NavStyled } from '../styles'
+import { Socials } from '../components'
 
 const Nav = () => {
-	return <div>Nav component goes here</div>
+	return (
+		<NavStyled>
+			<p>adamkeyes</p>
+			<Socials />
+		</NavStyled>
+	)
 }
 
 export default Nav
