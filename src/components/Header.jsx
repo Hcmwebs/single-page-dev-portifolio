@@ -1,7 +1,11 @@
 import React from 'react'
+import { HeaderStyled } from '../styles'
 
 const Header = () => {
-	return <div>Header component goes here</div>
+	return
+	<Header>
+		<Nav />
+	</Header>
 }
 
 export default Header
