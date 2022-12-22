@@ -18,5 +18,15 @@ const NavStyled = styled.nav`
 		grid-template-columns: repeat(4, 1fr);
 		gap: 1.625rem;
 	}
+	a {
+		&:hover .icon > path {
+			transition: var(--transition-2);
+			color: var(--accent);
+		}
+	}
+	.icon > path {
+		color: ${({ theme }) =>
+			theme.darkTheme ? theme.darkTheme : theme.lightTheme};
+	}
 `
 export default NavStyled
