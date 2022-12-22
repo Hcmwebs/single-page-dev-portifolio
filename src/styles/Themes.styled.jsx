@@ -1,7 +1,7 @@
 const theme = {
 	lightTheme: {
 		bg: 'var(--headingColor)',
-		body: 'var(--footerBgcolor)',
+		body: 'var(--footerBgColor)',
 		header: 'var(--bgColor)',
 		footer: 'var(--bodyBgColor)',
 	},
