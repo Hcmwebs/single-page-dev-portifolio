@@ -1,6 +1,6 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components'
 
-const GlobalStyles =createGlobalStyle`
+const GlobalStyles = createGlobalStyle`
 
 
 @import url('https://fonts.googleapis.com/css?family=Space+Grotesk:500,700');
@@ -15,9 +15,12 @@ const GlobalStyles =createGlobalStyle`
   --error: rgba(255, 111, 91, 1.0);
   --maxWidth:1440px;
   --fixedWidth:600px;
+  --transition-1: all 0.3s ease-in-out;
+  --transition-2: all 0.6s ease-in-out;
+  --transition-3: all 0.8s ease-in-out;
 
 
-  --shadow1: 
+  --shadow1:
 
 }
 
@@ -74,7 +77,11 @@ img, picture, svg {
   object-fit: cover;
 }
 
-`
+a{
+  text-decoration: none;
+  color: var(--headingColor)
+}
 
+`
 
 export default GlobalStyles
