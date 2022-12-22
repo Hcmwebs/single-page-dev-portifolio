@@ -25,8 +25,7 @@ const NavStyled = styled.nav`
 		}
 	}
 	.icon > path {
-		color: ${({ theme }) =>
-			theme.darkTheme ? theme.darkTheme : theme.lightTheme};
+		color: ${({ theme }) => theme.darkTheme.body};
 	}
 `
 export default NavStyled
