@@ -39,7 +39,7 @@ html {
 
 body {
   font-family: 'Space Grotesk', sans-serif;
-  font-weight: 500;
+  font-weight: ${({ theme }) => theme.fontWeights.medium};
   line-height: 1.75;
   color: var(--bodyColor);
   background:var(--bgColor);
@@ -52,7 +52,7 @@ body {
 h1, h2, h3, h4, h5,h6, p  {
   margin: 0 ;
   font-family: 'Space Grotesk', sans-serif;
-  font-weight: 700;
+  font-weight: ${({ theme }) => theme.fontWeights.bold};
   line-height: 1.3;
 }
 
