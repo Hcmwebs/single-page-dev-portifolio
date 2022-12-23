@@ -3,7 +3,7 @@ import React from 'react'
 const Socials = () => {
 	return (
 		<div className='socials'>
-			<a href='http://' target='_blank' rel='noopener noreferrer'>
+			<a href='#' target='_blank' rel='noopener noreferrer'>
 				<svg
 					className='icon'
 					xmlns='http://www.w3.org/2000/svg'
@@ -17,7 +17,7 @@ const Socials = () => {
 				</svg>
 			</a>
 
-			<a href='http://' target='_blank' rel='noopener noreferrer'>
+			<a href='#' target='_blank' rel='noopener noreferrer'>
 				<svg
 					className='icon'
 					xmlns='http://www.w3.org/2000/svg'
@@ -29,7 +29,7 @@ const Socials = () => {
 					/>
 				</svg>
 			</a>
-			<a href='http://' target='_blank' rel='noopener noreferrer'>
+			<a href='#' target='_blank' rel='noopener noreferrer'>
 				<svg
 					className='icon'
 					xmlns='http://www.w3.org/2000/svg'
@@ -42,7 +42,7 @@ const Socials = () => {
 					/>
 				</svg>
 			</a>
-			<a href='http://' target='_blank' rel='noopener noreferrer'>
+			<a href='#' target='_blank' rel='noopener noreferrer'>
 				<svg
 					className='icon'
 					xmlns='http://www.w3.org/2000/svg'
