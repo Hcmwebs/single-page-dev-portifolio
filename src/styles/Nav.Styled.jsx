@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const NavStyled = styled.nav`
-	width: 100%;
+	width: min(100%, 100%);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -9,7 +9,18 @@ const NavStyled = styled.nav`
 	gap: 1.25rem;
 	padding-block: 1rem;
 	@media (min-width: ${({ theme }) => theme.screens.tablet}) {
+		width: 100%;
 		flex-direction: row;
+	}
+	.logo {
+		font-size: 1.5rem;
+		font-weight: ${({ theme }) => theme.fontWeights.bold};
+		line-height: 2rem;
+		color: ${({ theme }) => theme.darkTheme.header};
+		text-align: center;
+		@media (min-width: ${({ theme }) => theme.screens.tablet}) {
+			font-size: 2rem;
+		}
 	}
 
 	.socials {
@@ -25,7 +36,7 @@ const NavStyled = styled.nav`
 		}
 	}
 	.icon > path {
-		color: ${({ theme }) => theme.darkTheme.body};
+		color: ${({ theme }) => theme.darkTheme.header};
 	}
 `
 export default NavStyled
