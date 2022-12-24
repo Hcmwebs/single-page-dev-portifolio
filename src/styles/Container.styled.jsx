@@ -4,7 +4,7 @@ const Container = styled.div`
 	color: ${({ theme }) => theme.darkTheme.body};
 	background-color: ${({ theme }) => theme.darkTheme.bg};
 	width: min(100%, var(--maxWidth));
-	height: 100%;
+
 	padding-inline: 1rem;
 	margin: 0 auto;
 	display: grid;
@@ -16,6 +16,7 @@ const Container = styled.div`
 	@media (min-width: ${({ theme }) => theme.screens.desktop}) {
 		padding-inline: 10rem;
 	}
+/*
 	&::before,
 	&::after {
 		content: '';
@@ -36,6 +37,6 @@ const Container = styled.div`
 		background-color: var(--accent);
 		background-image: url('/pattern-circle.svg');
 		z-index: 2;
-	}
+	} */
 `
 export default Container
