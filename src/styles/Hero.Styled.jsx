@@ -16,12 +16,33 @@ const StyledHero = styled.div`
 		img {
 			width: 100%;
 			height: 100%;
-      margin-top: -9rem
+			margin-top: -9rem;
 		}
 	}
-  .hero-body{
+	.hero-body {
+		width: 100%;
+		padding-inline: 1rem;
 
-  }
+		h1 {
+			width: 100%;
+			span {
+				position: relative;
+				width: max-content;
+				&::after {
+          content: '';
+					position: absolute;
+					width: 80%;
+					height: 3px;
+					background-color: var(--accent);
+          margin: 0.25rem auto 0 auto;
+
+				}
+			}
+		}
+
+		p {
+		}
+	}
 `
 
 export default StyledHero

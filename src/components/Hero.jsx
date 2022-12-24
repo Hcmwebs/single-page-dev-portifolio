@@ -18,7 +18,8 @@ const Hero = () => {
 			</div>
 			<div className='hero-body'>
 				<h1>
-					Nice to meet you! I'm <span>Adam Keyes.</span>
+					Nice to meet you! I'm
+					 <span>Adam Keyes.</span>
 				</h1>
 				<p>
 					Based in the UK, I'm a front-end developer passionate about building
