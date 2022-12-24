@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const NavStyled = styled.nav`
+const StyledNav = styled.nav`
 	width: min(100%, 100%);
 	display: flex;
 	justify-content: space-between;
@@ -39,4 +39,4 @@ const NavStyled = styled.nav`
 		color: ${({ theme }) => theme.darkTheme.header};
 	}
 `
-export default NavStyled
+export default StyledNav
