@@ -2,14 +2,17 @@ import React from 'react'
 import profileSmall from '../assets/image-profile-mobile.webp'
 import profileMedium from '../assets/image-profile-tablet.webp'
 import profileLarge from '../assets/image-profile-desktop.webp'
+import { StyledHero } from '../styles'
 
 const Hero = () => {
 	return (
-		<div>
-			<div className='heroHeader'>
+		<StyledHero>
+			<div className='hero-header'>
 				<picture>
 					<source srcset={profileLarge} media='(min-width: 1440px)' />
 					<source srcset={profileMedium} media='(min-width: 768px)' />
+					<source srcset={profileSmall} media='(max-width: 375px)' />
+
 					<img src={profileSmall} alt='profile' />
 				</picture>
 			</div>
@@ -25,7 +28,7 @@ const Hero = () => {
 					Contact me
 				</a>
 			</div>
-		</div>
+		</StyledHero>
 	)
 }
 
