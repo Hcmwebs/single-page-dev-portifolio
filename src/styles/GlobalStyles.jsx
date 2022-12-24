@@ -18,6 +18,9 @@ const GlobalStyles = createGlobalStyle`
   --transition-1: all 0.3s ease-in-out;
   --transition-2: all 0.6s ease-in-out;
   --transition-3: all 0.8s ease-in-out;
+  --mobile : 375px;
+  --tablet : 768px;
+  --desktop : 1440px;
 
 
   --shadow1:
