@@ -18,9 +18,9 @@ const theme = {
 	},
 
 	screens: {
-		mobile: '375px',
-		tablet: '768px',
-		desktop: '1440px',
+		mobile: 'var(--mobile)',
+		tablet: 'var(--tablet)',
+		desktop: 'var(--desktop)',
 	},
 }
 export default theme

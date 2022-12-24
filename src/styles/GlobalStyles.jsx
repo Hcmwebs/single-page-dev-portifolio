@@ -22,9 +22,6 @@ const GlobalStyles = createGlobalStyle`
   --tablet : 768px;
   --desktop : 1440px;
 
-
-  --shadow1:
-
 }
 
 *, *::before, *::after{
