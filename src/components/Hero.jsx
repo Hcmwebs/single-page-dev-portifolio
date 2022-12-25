@@ -9,17 +9,18 @@ const Hero = () => {
 		<StyledHero>
 			<div className='hero-header'>
 				<picture>
-					<source srcset={profileLarge} media='(min-width: 1440px)' />
-					<source srcset={profileMedium} media='(min-width: 768px)' />
-					<source srcset={profileSmall} media='(max-width: 375px)' />
+					<source srcSet={profileLarge} media='(min-width: 1440px)' />
+					<source srcSet={profileMedium} media='(min-width: 768px)' />
+					<source srcSet={profileSmall} media='(max-width: 375px)' />
 
 					<img src={profileSmall} alt='profile' />
 				</picture>
 			</div>
+
 			<div className='hero-body'>
 				<h1>
 					Nice to meet you! I'm
-					 <span>Adam Keyes.</span>
+					<span>Adam Keyes.</span>
 				</h1>
 				<p>
 					Based in the UK, I'm a front-end developer passionate about building
