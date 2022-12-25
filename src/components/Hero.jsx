@@ -11,7 +11,7 @@ const Hero = () => {
 				<picture>
 					<source srcSet={profileLarge} media='(min-width: 1440px)' />
 					<source srcSet={profileMedium} media='(min-width: 768px)' />
-					<source srcSet={profileSmall} media='(max-width: 375px)' />
+					<source srcSet={profileSmall} media='(min-width: 375px)' />
 
 					<img src={profileSmall} alt='profile' />
 				</picture>

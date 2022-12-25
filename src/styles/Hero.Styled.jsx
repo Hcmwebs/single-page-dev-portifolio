@@ -12,27 +12,28 @@ const StyledHero = styled.div`
 	}
 
 	.hero-header {
-		width: 190px;
-		height: 242px;
+		width: 174px;
+		height: 343px;
+		position: relative;
 		@media (min-width: 768px) {
-			width: 350px;
-			height: 490px;
+			width: 322px;
+			height: 600px;
 			img {
-				margin-top: -4rem;
+				top: -4rem;
 			}
 		}
 		@media (min-width: 1440px) {
-			width: 350px;
-			height: 490px;
+			width: 445px;
+			height: 720px;
 			img {
-				margin-top: -4rem;
+				right: -3.8rem;
 			}
 		}
 	}
 	img {
-		width: 100%;
 		height: 100%;
-		margin-top: -10rem;
+		position: absolute;
+		top: -2rem;
 	}
 	.hero-body {
 		width: 100%;
@@ -42,7 +43,6 @@ const StyledHero = styled.div`
 			width: 100%;
 			span {
 				position: relative;
-				width: max-content;
 				&::after {
 					content: '';
 					position: absolute;
