@@ -8,7 +8,9 @@ const StyledNav = styled.nav`
 	flex-direction: column;
 	gap: 1.25rem;
 	padding-block: 1rem;
-	@media (min-width: ${({ theme }) => theme.screens.tablet}) {
+	position: relative;
+	
+	@media (min-width: 768px) {
 		width: 100%;
 		flex-direction: row;
 	}

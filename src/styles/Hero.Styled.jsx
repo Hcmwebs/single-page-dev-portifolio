@@ -7,19 +7,25 @@ const StyledHero = styled.div`
 	align-items: center;
 	flex-direction: column;
 	gap: 2.5rem;
-	@media (min-width: ${({ theme }) => theme.screens.tablet}) {
+	@media (min-width: 768px) {
 		flex-direction: row-reverse;
 	}
 
 	.hero-header {
 		width: 190px;
 		height: 242px;
-		@media (min-width: ${({ theme }) => theme.screens.tablet}) {
+		@media (min-width: 768px) {
 			width: 350px;
 			height: 490px;
 			img {
-				margin-top: 0;
-				margin-right: -2rem;
+				margin-top: -4rem;
+			}
+		}
+		@media (min-width: 1440px) {
+			width: 350px;
+			height: 490px;
+			img {
+				margin-top: -4rem;
 			}
 		}
 	}
