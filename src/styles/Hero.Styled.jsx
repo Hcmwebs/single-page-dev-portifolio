@@ -38,23 +38,23 @@ const StyledHero = styled.div`
 	.hero-body {
 		width: 100%;
 		padding-inline: 1rem;
+		display: grid;
+		place-items: center;
+		gap: 1.5rem;
 
 		h1 {
 			width: 100%;
-			span {
-				position: relative;
-				&::after {
-					content: '';
-					position: absolute;
-					width: 80%;
-					height: 3px;
-					background-color: var(--accent);
-					margin: 0.25rem auto 0 auto;
-				}
-			}
+			font-family: 'Space Grotesk';
+			font-style: normal;
+			font-weight: 700;
+			font-size: 40px;
+			line-height: 40px;
+			text-align: center;
 		}
 
 		p {
+			line-height: 26px;
+			text-align: center;
 		}
 	}
 `

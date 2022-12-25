@@ -2,7 +2,7 @@ import React from 'react'
 import profileSmall from '../assets/image-profile-mobile.webp'
 import profileMedium from '../assets/image-profile-tablet.webp'
 import profileLarge from '../assets/image-profile-desktop.webp'
-import { StyledHero } from '../styles'
+import { StyledHero, StyledTitle } from '../styles'
 
 const Hero = () => {
 	return (
@@ -18,7 +18,10 @@ const Hero = () => {
 			<div className='hero-body'>
 				<h1>
 					Nice to meet you! I'm
-					<span>Adam Keyes.</span>
+					<StyledTitle>
+						<h1>Adam Keyes.</h1>
+						<div className='underline'></div>
+					</StyledTitle>
 				</h1>
 				<p>
 					Based in the UK, I'm a front-end developer passionate about building
