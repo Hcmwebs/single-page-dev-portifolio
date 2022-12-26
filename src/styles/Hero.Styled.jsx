@@ -32,11 +32,14 @@ const StyledHero = styled.div`
 	.hero-body {
 		width: 100%;
 		padding-inline: 1rem;
+		padding-bottom: 3rem;
 		display: grid;
-		place-items: center;
+		justify-content: center;
+		align-items: center;
 		gap: 1.5rem;
 		@media (min-width: 768px) {
 			width: 50%;
+			justify-content: start;
 		}
 
 		h1 {

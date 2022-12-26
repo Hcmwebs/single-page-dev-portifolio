@@ -14,16 +14,20 @@ const StyledLink = styled.a`
 	transition: var(--transition-2);
 	&:hover {
 		color: var(--accent);
-		width: 100%;
+		&::before {
+			width: 75%;
+			background-color: var(--accent);
+		}
 	}
 
-	a::before {
+	&::before {
 		content: '';
-		width: 75%;
+		width: 30%;
 		height: 4px;
 		position: absolute;
-		bottom: -5px;
+		bottom: 0px;
 		background-color: var(--headingColor);
+		transition: var(--transition-2);
 	}
 `
 
