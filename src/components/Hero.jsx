@@ -30,10 +30,7 @@ const Hero = () => {
 			<div className='hero-body'>
 				<h1>
 					Nice to meet you! I'm
-					<StyledTitle>
-						<h1>Adam Keyes.</h1>
-						<div className='underline'></div>
-					</StyledTitle>
+					<span> Adam Keyes.</span>
 				</h1>
 				<p>
 					Based in the UK, I'm a front-end developer passionate about building

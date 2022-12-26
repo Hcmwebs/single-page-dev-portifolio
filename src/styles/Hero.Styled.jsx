@@ -49,8 +49,16 @@ const StyledHero = styled.div`
 			font-size: 40px;
 			line-height: 40px;
 			text-align: center;
+			position: relative;
 			@media (min-width: 768px) {
-				text-align:left
+				text-align: left;
+			}
+			&::before {
+				content: '';
+				width: 100%;
+				height: 4px;
+				background-color: var(--accent);
+				position: absolute;
 			}
 		}
 
@@ -58,7 +66,7 @@ const StyledHero = styled.div`
 			line-height: 26px;
 			text-align: center;
 			@media (min-width: 768px) {
-				text-align:left
+				text-align: left;
 			}
 		}
 	}
