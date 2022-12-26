@@ -7,13 +7,25 @@ import { StyledHero, StyledTitle } from '../styles'
 const Hero = () => {
 	return (
 		<StyledHero>
-			<div className='hero-header'>
-				<picture>
-					<source srcSet={profileLarge} media='(min-width: 1440px)' />
-					<source srcSet={profileMedium} media='(min-width: 768px)' />
-					<img src={profileSmall} alt='profile' />
-				</picture>
-			</div>
+			<picture>
+				<source
+					srcSet={profileLarge}
+					media='(min-width: 1440px)'
+					type='image/webp'
+				/>
+				<source
+					srcSet={profileMedium}
+					media='(min-width: 768px) and (max-width:1439px) '
+					type='image/webp'
+				/>
+				<source
+					srcSet={profileSmall}
+					media='(min-width: 300px) and (max-width:767px) '
+					type='image/webp'
+				/>
+
+				<img src={profileSmall} alt='profile' type='image/webp' />
+			</picture>
 
 			<div className='hero-body'>
 				<h1>
