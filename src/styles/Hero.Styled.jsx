@@ -11,36 +11,33 @@ const StyledHero = styled.div`
 		flex-direction: row-reverse;
 	}
 
-	.hero-header {
-		width: 174px;
-		height: 343px;
+	img {
+		width: 173px;
+		height: 383px;
 		position: relative;
+		top: -6rem;
 		@media (min-width: 768px) {
 			width: 322px;
 			height: 600px;
-			img {
-				top: -4rem;
-			}
+			top: -4rem;
+			right: -1rem;
 		}
 		@media (min-width: 1440px) {
 			width: 445px;
 			height: 720px;
-			img {
-				right: -3.8rem;
-			}
+			right: -8rem;
 		}
 	}
-	img {
-		height: 100%;
-		position: absolute;
-		top: -2rem;
-	}
+
 	.hero-body {
 		width: 100%;
 		padding-inline: 1rem;
 		display: grid;
 		place-items: center;
 		gap: 1.5rem;
+		@media (min-width: 768px) {
+			width: 50%;
+		}
 
 		h1 {
 			width: 100%;
