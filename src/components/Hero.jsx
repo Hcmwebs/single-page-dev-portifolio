@@ -2,7 +2,7 @@ import React from 'react'
 import profileSmall from '../assets/image-profile-mobile.webp'
 import profileMedium from '../assets/image-profile-tablet.webp'
 import profileLarge from '../assets/image-profile-desktop.webp'
-import { StyledHero, StyledLink, StyledTitle } from '../styles'
+import { StyledHero, StyledLink } from '../styles'
 
 const Hero = () => {
 	return (
