@@ -49,16 +49,20 @@ const StyledHero = styled.div`
 			font-size: 40px;
 			line-height: 40px;
 			text-align: center;
-			position: relative;
 			@media (min-width: 768px) {
 				text-align: left;
 			}
-			&::before {
-				content: '';
-				width: 100%;
-				height: 4px;
-				background-color: var(--accent);
-				position: absolute;
+			span {
+				position: relative;
+
+				&::before {
+					content: '';
+					width: 235px;
+					height: 4px;
+					background-color: var(--accent);
+					position: absolute;
+					bottom: -0.2rem;
+				}
 			}
 		}
 
