@@ -43,18 +43,23 @@ const StyledHero = styled.div`
 		}
 
 		h1 {
-			width: 100%;
 			font-family: 'Space Grotesk';
 			font-style: normal;
 			font-weight: 700;
 			font-size: 40px;
 			line-height: 40px;
 			text-align: center;
+			@media (min-width: 768px) {
+				text-align:left
+			}
 		}
 
 		p {
 			line-height: 26px;
 			text-align: center;
+			@media (min-width: 768px) {
+				text-align:left
+			}
 		}
 	}
 `
