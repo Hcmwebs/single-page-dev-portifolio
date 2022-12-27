@@ -1,17 +1,20 @@
 import styled from 'styled-components'
 
 const StyledLink = styled.a`
-	text-decoration: none;
 	font-weight: 700;
 	font-size: 1rem;
 	line-height: 26px;
 	letter-spacing: 2.28571px;
+	text-decoration: none;
 	text-transform: uppercase;
+	text-align: center;
 	display: inline-block;
-	padding-inline: 1rem;
 	position: relative;
 	cursor: pointer;
 	transition: var(--transition-2);
+	@media (min-width: 768px) {
+		text-align: left;
+	}
 	&:hover {
 		color: var(--accent);
 		&::before {

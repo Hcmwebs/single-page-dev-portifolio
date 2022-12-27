@@ -36,10 +36,8 @@ const Hero = () => {
 					Based in the UK, I'm a front-end developer passionate about building
 					accessible web apps that users love.
 				</p>
-				<StyledLink>
-					<a href='#' target='_blank' rel='noopener noreferrer'>
+				<StyledLink href='#' target='_blank' rel='noopener noreferrer'>
 					Contact me
-					</a>
 				</StyledLink>
 			</div>
 		</StyledHero>
