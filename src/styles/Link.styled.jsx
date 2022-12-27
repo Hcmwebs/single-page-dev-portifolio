@@ -8,24 +8,24 @@ const StyledLink = styled.a`
 	letter-spacing: 2.28571px;
 	text-transform: uppercase;
 	display: inline-block;
-	padding: 0.75rem 1.5rem;
+	padding-inline: 1rem;
 	position: relative;
 	cursor: pointer;
 	transition: var(--transition-2);
 	&:hover {
 		color: var(--accent);
 		&::before {
-			width: 75%;
+			width: 128px;
 			background-color: var(--accent);
 		}
 	}
 
 	&::before {
 		content: '';
-		width: 30%;
+		width: 40px;
 		height: 4px;
 		position: absolute;
-		bottom: 0px;
+		bottom: -0.2rem;
 		background-color: var(--headingColor);
 		transition: var(--transition-2);
 	}
