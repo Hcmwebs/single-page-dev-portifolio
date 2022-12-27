@@ -7,39 +7,46 @@ const StyledHero = styled.div`
 	align-items: center;
 	flex-direction: column;
 	gap: 2.5rem;
+	position: relative;
 	@media (min-width: 768px) {
 		flex-direction: row-reverse;
 	}
 
 	img {
-		width: 173px;
+		width: 174px;
 		height: 383px;
 		position: relative;
-		top: -6rem;
+		top: -7rem;
 		@media (min-width: 768px) {
-			width: 322px;
+			width: 385px;
 			height: 600px;
 			top: -4rem;
-			right: -1rem;
+			left: 50%;
 		}
 		@media (min-width: 1440px) {
 			width: 445px;
 			height: 720px;
-			right: -8rem;
+			left: 70%;
 		}
 	}
 
 	.hero-body {
 		width: 100%;
 		padding-inline: 1rem;
-		padding-bottom: 3rem;
+		margin-top: -7rem;
 		display: grid;
 		justify-content: center;
 		align-items: center;
 		gap: 1.5rem;
+
 		@media (min-width: 768px) {
-			width: 50%;
+			width: 60%;
 			justify-content: start;
+			position: absolute;
+			left: 0;
+		}
+		@media (min-width: 1440px) {
+			width: 50%;
 		}
 
 		h1 {
@@ -50,18 +57,37 @@ const StyledHero = styled.div`
 			line-height: 40px;
 			text-align: center;
 			@media (min-width: 768px) {
+				font-size: 72px;
+				line-height: 72px;
+				letter-spacing: -2px;
 				text-align: left;
+			}
+			@media (min-width: 1440px) {
+				font-size: 88px;
+				line-height: 88px;
+				letter-spacing: -2.5px;
 			}
 			span {
 				position: relative;
 
 				&::before {
 					content: '';
-					width: 235px;
+					width: 220px;
 					height: 4px;
 					background-color: var(--accent);
 					position: absolute;
 					bottom: -0.2rem;
+					left: 10px;
+
+					@media (min-width: 768px) {
+						width: 385px;
+						height: 6px;
+						left: -242px;
+					}
+					@media (min-width: 1440px) {
+						width: 470px;
+						left: -300px;
+					}
 				}
 			}
 		}
@@ -70,6 +96,8 @@ const StyledHero = styled.div`
 			line-height: 26px;
 			text-align: center;
 			@media (min-width: 768px) {
+				font-size: 18px;
+				line-height: 28px;
 				text-align: left;
 			}
 		}

@@ -7,7 +7,7 @@ const StyledNav = styled.nav`
 	align-items: center;
 	flex-direction: column;
 	gap: 1.25rem;
-	padding-block: 1rem;
+	padding: 1rem;
 	position: relative;
 	z-index: 9;
 
@@ -31,7 +31,6 @@ const StyledNav = styled.nav`
 		place-items: center;
 		grid-template-columns: repeat(4, 1fr);
 		gap: 1.625rem;
-
 	}
 	a {
 		&:hover .icon > path {

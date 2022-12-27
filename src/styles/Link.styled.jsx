@@ -29,7 +29,7 @@ const StyledLink = styled.a`
 		height: 4px;
 		position: absolute;
 		bottom: -0.2rem;
-		background-color: var(--headingColor);
+		background-color: var(--accent);
 		transition: var(--transition-2);
 	}
 `
