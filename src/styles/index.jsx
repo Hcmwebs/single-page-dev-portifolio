@@ -6,6 +6,7 @@ import StyledNav from './Nav.Styled'
 import StyledHero from './Hero.Styled'
 import StyledTitle from './Title.styled'
 import StyledLink from './Link.styled'
+import StyledMain from './Main.styled'
 
 export {
 	GlobalStyles,
@@ -16,4 +17,5 @@ export {
 	StyledHero,
 	StyledTitle,
 	StyledLink,
+	StyledMain,
 }

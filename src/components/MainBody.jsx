@@ -1,12 +1,13 @@
 import React from 'react'
 import { Skills, Projects } from '../components'
+import { StyledMain } from '../styles'
 
 const MainBody = () => {
 	return (
-		<main>
+		<StyledMain>
 			<Skills />
 			<Projects />
-		</main>
+		</StyledMain>
 	)
 }
 
