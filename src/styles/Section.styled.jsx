@@ -8,11 +8,9 @@ const StyledSection = styled.section`
 
 	.items {
 		width: 100%;
-		padding-block: 2.5rem;
 		display: grid;
 		place-items: center;
 		grid-template-columns: repeat(auto-fit, minmax(311px, 1fr));
-		gap: 2.5rem;
 		border-top: 1px solid ${({ theme }) => theme.darkTheme.bodyColor};
 		border-bottom: 1px solid ${({ theme }) => theme.darkTheme.bodyColor};
 	}
@@ -22,6 +20,9 @@ const StyledSection = styled.section`
 		display: grid;
 		place-items: center;
 		gap: 0.25rem;
+		@media (min-width: 768px) {
+			justify-items: start;
+		}
 
 		h2 {
 			font-size: 2rem;
@@ -43,6 +44,22 @@ const StyledSection = styled.section`
 				font-size: 1.125rem;
 				line-height: 1.75rem;
 			}
+		}
+	}
+
+	.skills {
+		gap: 2.5rem;
+		padding-block: 2.5rem;
+		border-top: 1px solid ${({ theme }) => theme.darkTheme.bodyColor};
+		border-bottom: 1px solid ${({ theme }) => theme.darkTheme.bodyColor};
+		@media (min-width: 768px) {
+			padding-block: 3.25rem;
+			gap: 3.25rem 0.5rem;
+			border-bottom: none;
+		}
+		@media (min-width: 768px) {
+			padding-block: 4.5rem;
+			gap: 3.625rem 2rem;
 		}
 	}
 `
