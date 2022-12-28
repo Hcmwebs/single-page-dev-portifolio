@@ -5,7 +5,7 @@ import { Hero, Nav } from '../components'
 const Header = () => {
 	return (
 		<StyledHeader>
-			<StyledRings top='125px' left='-341px' />
+			<StyledRings className='header' />
 			<StyledCircle top='254px' left='311px' />
 			<Nav />
 			<Hero />
