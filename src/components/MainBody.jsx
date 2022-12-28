@@ -5,7 +5,7 @@ import { Container, StyledMain, StyledRings } from '../styles'
 const MainBody = () => {
 	return (
 		<StyledMain>
-			<StyledRings left='189px' top='1370px' />
+			<StyledRings className='main' />
 			<Skills />
 			<Projects />
 		</StyledMain>
