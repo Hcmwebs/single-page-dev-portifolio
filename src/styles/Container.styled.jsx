@@ -10,33 +10,12 @@ const Container = styled.div`
 	display: grid;
 	place-items: center;
 	position: relative;
+	overflow: hidden;
 	@media (min-width: ${({ theme }) => theme.screens.tablet}) {
 		padding-inline: 2rem;
 	}
 	@media (min-width: ${({ theme }) => theme.screens.desktop}) {
 		padding-inline: 10rem;
 	}
-/*
-	&::before,
-	&::after {
-		content: '';
-		position: absolute;
-		width: 100px;
-		height: 100px;
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-	&::before {
-		background-position: center center;
-		background-color: #fff;
-		background-image: url('/pattern-rings.svg');
-		z-index: 1;
-	}
-	&::after {
-		background-position: center center;
-		background-color: var(--accent);
-		background-image: url('/pattern-circle.svg');
-		z-index: 2;
-	} */
 `
 export default Container
