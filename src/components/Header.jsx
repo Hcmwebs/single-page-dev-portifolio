@@ -6,7 +6,7 @@ const Header = () => {
 	return (
 		<StyledHeader>
 			<StyledRings className='header' />
-			<StyledCircle top='254px' left='311px' />
+			<StyledCircle className='header' />
 			<Nav />
 			<Hero />
 		</StyledHeader>
