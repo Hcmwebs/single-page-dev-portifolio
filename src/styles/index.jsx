@@ -1,4 +1,6 @@
 import Container from './Container.styled'
+import StyledRings from './Rings.styled'
+import StyledCircle from './Circle.styled'
 import GlobalStyles from './GlobalStyles'
 import theme from './Themes.styled'
 import StyledHeader from './Header.styled'
@@ -12,6 +14,8 @@ import StyledSection from './Section.styled'
 export {
 	GlobalStyles,
 	Container,
+	StyledRings,
+	StyledCircle,
 	theme,
 	StyledHeader,
 	StyledNav,
