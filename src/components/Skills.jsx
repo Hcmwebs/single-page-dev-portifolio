@@ -1,14 +1,15 @@
 import React from 'react'
 import { skills } from '../data/Data'
-import {SingleSkill} from './index'
+import { StyledSection } from '../styles'
+import { SingleSkill } from './index'
 
 const Skills = () => {
 	return (
-		<div>
+		<StyledSection>
 			{skills.map((skill) => {
 				return <SingleSkill key={skill.id} {...skill} />
 			})}
-		</div>
+		</StyledSection>
 	)
 }
 

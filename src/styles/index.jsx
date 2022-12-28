@@ -7,6 +7,7 @@ import StyledHero from './Hero.Styled'
 import StyledTitle from './Title.styled'
 import StyledLink from './Link.styled'
 import StyledMain from './Main.styled'
+import StyledSection from './Section.styled'
 
 export {
 	GlobalStyles,
@@ -18,4 +19,5 @@ export {
 	StyledTitle,
 	StyledLink,
 	StyledMain,
+	StyledSection,
 }
