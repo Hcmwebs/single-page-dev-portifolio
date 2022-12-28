@@ -49,11 +49,18 @@ body {
 
 }
 
-h1, h2, h3, h4, h5,h6, p  {
+p{
+  font-weight: ${({ theme }) => theme.fontWeights.medium};
+  margin: 0;
+  color: ${({ theme }) => theme.darkTheme.body};
+}
+
+h1, h2, h3, h4, h5,h6  {
   margin: 0 ;
   font-family: 'Space Grotesk', sans-serif;
   font-weight: ${({ theme }) => theme.fontWeights.bold};
   line-height: 1.3;
+  color: ${({ theme }) => theme.darkTheme.header};
 }
 
 h1 {
