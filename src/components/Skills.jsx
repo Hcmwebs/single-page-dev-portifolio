@@ -5,10 +5,12 @@ import { SingleSkill } from './index'
 
 const Skills = () => {
 	return (
-		<StyledSection>
-			{skills.map((skill) => {
-				return <SingleSkill key={skill.id} {...skill} />
-			})}
+		<StyledSection className='skills'>
+			<div className='skills'>
+				{skills.map((skill) => {
+					return <SingleSkill key={skill.id} {...skill} />
+				})}
+			</div>
 		</StyledSection>
 	)
 }
