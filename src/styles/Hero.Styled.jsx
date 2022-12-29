@@ -102,6 +102,7 @@ const StyledHero = styled.div`
 			}
 		}
 	}
+
 `
 
 export default StyledHero
