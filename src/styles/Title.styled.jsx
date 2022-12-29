@@ -1,19 +1,24 @@
 import styled from 'styled-components'
 
-const StyledTitle = styled.span`
-	h1 {
+const StyledTitle = styled.div`
+	h2 {
+		width: max-content;
 		font-family: 'Space Grotesk';
 		font-weight: ${({ theme }) => theme.fontWeights.bold};
 		font-size: 40px;
 		line-height: 40px;
 		text-align: center;
-	}
-	.underline {
-		width: 225px;
-		height: 4px;
-		margin-inline: auto;
-		margin-block: 0.2rem;
-		background-color: var(--accent);
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			bottom:-0.5rem;
+			left:50%;
+			transform: translateX(-50%);
+			width: 70%;
+			height: 4px;
+			background-color: var(--accent);
+		}
 	}
 `
 
