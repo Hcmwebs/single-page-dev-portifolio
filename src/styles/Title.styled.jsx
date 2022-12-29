@@ -9,11 +9,21 @@ const StyledTitle = styled.div`
 		line-height: 40px;
 		text-align: center;
 		position: relative;
+		@media (min-width: 768px) {
+			font-size: 72px;
+			line-height: 72px;
+			letter-spacing: -2px;
+		}
+		@media (min-width: 1440px) {
+			font-size: 88px;
+			line-height: 88px;
+			letter-spacing: -2.5px;
+		}
 		&::before {
 			content: '';
 			position: absolute;
-			bottom:-0.5rem;
-			left:50%;
+			bottom: -0.5rem;
+			left: 50%;
 			transform: translateX(-50%);
 			width: 70%;
 			height: 4px;
