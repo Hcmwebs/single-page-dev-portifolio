@@ -67,6 +67,20 @@ const StyledSection = styled.section`
 			}
 		}
 	}
+	.project {
+		width: min(100%, 540px);
+		min-height: 450px;
+		display:grid;
+		place-items: center;
+		img {
+			width: 343px;
+			height: 253px;
+			@media (min-width: 1440px) {
+				width: 540px;
+				height: 487px;
+			}
+		}
+	}
 `
 
 export default StyledSection
