@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 
 const StyledLink = styled.a`
+	width: max-content;
+	height: 1.75rem;
 	font-weight: 700;
 	font-size: 1rem;
 	line-height: 26px;
@@ -8,7 +10,9 @@ const StyledLink = styled.a`
 	text-decoration: none;
 	text-transform: uppercase;
 	text-align: center;
-	display: inline-block;
+	display: grid;
+	place-items:center;
+	justify-items:start;
 	position: relative;
 	cursor: pointer;
 	transition: var(--transition-2);
@@ -32,6 +36,8 @@ const StyledLink = styled.a`
 		background-color: var(--accent);
 		transition: var(--transition-2);
 	}
+
+
 `
 
 export default StyledLink
