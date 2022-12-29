@@ -1,19 +1,20 @@
 import React from 'react'
 import { projects } from '../data/Data'
 import { SingleProject } from './index'
-import { StyledTitle, StyledLink, StyledSection } from '../styles'
+import { StyledTitle, StyledLink, StyledSection, StyledFlex } from '../styles'
 
 const Projects = () => {
 	return (
 		<StyledSection>
-			<div>
+			<StyledFlex jc='space-between' align='center'>
 				<StyledTitle>
 					<h2>Projects</h2>
 				</StyledTitle>
 				<StyledLink href='#' target='_blank' rel='noopener noreferrer'>
 					contact me
 				</StyledLink>
-			</div>
+			</StyledFlex>
+
 			<div className='items'>
 				{projects.map((project) => {
 					return <SingleProject key={project.id} {...project} />
