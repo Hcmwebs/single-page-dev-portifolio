@@ -17,25 +17,22 @@ const StyledSection = styled.section`
 		width: 100%;
 		display: grid;
 		place-items: center;
+		grid-template-columns: repeat(auto-fit, minmax(311px, 1fr));
+		gap: 2.5rem;
+		padding-block: 2.5rem;
 
-		&.skills {
-			grid-template-columns: repeat(auto-fit, minmax(311px, 1fr));
-			gap: 2.5rem;
-			padding-block: 2.5rem;
-			border-top: 1px solid ${({ theme }) => theme.darkTheme.bodyColor};
-			border-bottom: 1px solid ${({ theme }) => theme.darkTheme.bodyColor};
-			@media (min-width: 768px) {
-				padding-block: 3.25rem;
-				gap: 3.25rem 0.5rem;
-				border-bottom: none;
-			}
-			@media (min-width: 768px) {
-				padding-block: 4.5rem;
-				gap: 3.625rem 2rem;
-			}
+		@media (min-width: 768px) {
+			padding-block: 3.25rem;
+			gap: 3.25rem 0.5rem;
+		}
+		@media (min-width: 768px) {
+			padding-block: 4.5rem;
+			gap: 3.625rem 2rem;
 		}
 
-		&.projects {
+		&.skills {
+			border-top: 1px solid ${({ theme }) => theme.darkTheme.bodyColor};
+			border-bottom: 1px solid ${({ theme }) => theme.darkTheme.bodyColor};
 		}
 	}
 
