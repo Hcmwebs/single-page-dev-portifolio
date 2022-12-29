@@ -5,7 +5,13 @@ const StyledSection = styled.section`
 	min-height: 50vh;
 	display: grid;
 	place-items: center;
-
+	gap: 2.5rem;
+	@media (min-width: 768px) {
+		gap: 3.75rem;
+	}
+	@media (min-width: 1440px) {
+		gap: 5rem;
+	}
 
 	.items {
 		width: 100%;
@@ -29,10 +35,8 @@ const StyledSection = styled.section`
 			}
 		}
 
-		&.projects{
-			
+		&.projects {
 		}
-
 	}
 
 	.single-item {
