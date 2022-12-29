@@ -21,6 +21,8 @@ const GlobalStyles = createGlobalStyle`
   --mobile : 375px;
   --tablet : 768px;
   --desktop : 1440px;
+  --medium: 500;
+	--bold: 700;
 
 }
 
@@ -39,7 +41,7 @@ html {
 
 body {
   font-family: 'Space Grotesk', sans-serif;
-  font-weight: ${({ theme }) => theme.fontWeights.medium};
+  font-weight: var(--medium);
   line-height: 1.75;
   color: var(--bodyColor);
   background:var(--bgColor);
@@ -50,7 +52,6 @@ body {
 }
 
 p{
-  font-weight: ${({ theme }) => theme.fontWeights.medium};
   margin: 0;
   color: ${({ theme }) => theme.darkTheme.body};
 }
@@ -58,7 +59,7 @@ p{
 h1, h2, h3, h4, h5,h6  {
   margin: 0 ;
   font-family: 'Space Grotesk', sans-serif;
-  font-weight: ${({ theme }) => theme.fontWeights.bold};
+  font-weight: var(--bold);
   line-height: 1.3;
   color: ${({ theme }) => theme.darkTheme.header};
 }
