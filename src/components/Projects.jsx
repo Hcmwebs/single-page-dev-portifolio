@@ -15,7 +15,7 @@ const Projects = () => {
 				</StyledLink>
 			</StyledFlex>
 
-			<div className='items'>
+			<div className='items projects'>
 				{projects.map((project) => {
 					return <SingleProject key={project.id} {...project} />
 				})}
