@@ -11,6 +11,7 @@ import StyledLink from './Link.styled'
 import StyledMain from './Main.styled'
 import StyledSection from './Section.styled'
 import StyledFlex from './Flex.styled'
+import StyledProject from './SingleProject.styled'
 
 export {
 	GlobalStyles,
@@ -26,4 +27,5 @@ export {
 	StyledLink,
 	StyledMain,
 	StyledSection,
+	StyledProject,
 }
