@@ -1,4 +1,5 @@
 import React from 'react'
+import styled from 'styled-components'
 
 const SingleProject = ({
 	id,
@@ -10,7 +11,7 @@ const SingleProject = ({
 	skills,
 }) => {
 	return (
-		<div className='project' key={id}>
+		<Wrapper key={id}>
 			<picture>
 				<source
 					srcSet={imageLarge}
@@ -47,8 +48,18 @@ const SingleProject = ({
 					</a>
 				</div>
 			</div>
-		</div>
+		</Wrapper>
 	)
 }
+const Wrapper = styled.div`
+width: min(100%, 343px);
+min-height:450px;
+display:grid;
+place-items: center;
+
+@media (min-width: 768px) {
+	width: min(100%, 540px);
+}
+`
 
 export default SingleProject

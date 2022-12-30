@@ -68,15 +68,15 @@ const StyledSection = styled.section`
 		}
 	}
 	.project {
-		width: min(100%, 540px);
+		width:100%;
 		min-height: 450px;
 		display:grid;
 		place-items: center;
 		img {
-			width: 343px;
+			width: 100%;
 			height: 253px;
 			@media (min-width: 1440px) {
-				width: 540px;
+				width:min(100%,540px);
 				height: 487px;
 			}
 		}
