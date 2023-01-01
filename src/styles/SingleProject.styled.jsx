@@ -29,17 +29,18 @@ const StyledProject = styled.div`
 
 	.cardBody {
 		width: 100%;
-		display: block;
+		display: grid;
+		place-items: center;
+		justify-items: start;
+		gap: 1.25rem;
 
 		h2 {
 			font-size: 1.5rem;
 			line-height: 2rem;
 			text-transform: uppercase;
-			margin-bottom: 1.25rem;
 		}
 
-		.skills {
-			margin-bottom: 1.25rem;
+		p {
 			text-transform: uppercase;
 		}
 
