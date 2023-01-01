@@ -12,7 +12,9 @@ const StyledProject = styled.div`
 		position: relative;
 		&:hover .overlay {
 			display: grid;
-			place-items: center;
+			justify-content: center;
+			align-items: center;
+
 			.links {
 				flex-direction: column;
 				gap: 1.5rem;
