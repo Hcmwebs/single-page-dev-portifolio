@@ -14,7 +14,6 @@ const StyledProject = styled.div`
 			display: grid;
 			justify-content: center;
 			align-items: center;
-
 			.links {
 				flex-direction: column;
 				gap: 1.5rem;
