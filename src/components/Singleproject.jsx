@@ -39,11 +39,7 @@ const SingleProject = ({
 			<div className='cardBody'>
 				<h2>{title}</h2>
 				<p>{skills}</p>
-				<StyledFlex
-					jc='space-between'
-					align='center'
-					width='100%'
-					className='footer'>
+				<StyledFlex jc='space-between' align='center' className='footer'>
 					<StyledLink href={live} target='_blank' rel='noopener noreferrer'>
 						{live}
 					</StyledLink>

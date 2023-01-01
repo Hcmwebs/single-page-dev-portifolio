@@ -6,7 +6,7 @@ import { StyledTitle, StyledLink, StyledSection, StyledFlex } from '../styles'
 const Projects = () => {
 	return (
 		<StyledSection>
-			<StyledFlex jc='space-between' align='center' width='100%'>
+			<StyledFlex jc='space-between' align='center'>
 				<StyledTitle>
 					<h2>Projects</h2>
 				</StyledTitle>
