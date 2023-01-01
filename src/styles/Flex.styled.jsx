@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const StyledFlex = styled.div`
-	width: ${({ width }) => width};
+	width: 100%;
 	display: flex;
 	justify-content: ${({ jc }) => jc};
 	align-items: ${({ align }) => align};
