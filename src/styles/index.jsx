@@ -12,6 +12,7 @@ import StyledMain from './Main.styled'
 import StyledSection from './Section.styled'
 import StyledFlex from './Flex.styled'
 import StyledProject from './SingleProject.styled'
+import StyledFooter from './Footer.styled'
 
 export {
 	GlobalStyles,
@@ -28,4 +29,5 @@ export {
 	StyledMain,
 	StyledSection,
 	StyledProject,
+	StyledFooter,
 }
