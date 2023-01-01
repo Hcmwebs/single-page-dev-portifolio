@@ -4,9 +4,9 @@ import { StyledFooter } from '../styles'
 
 const Footer = () => {
 	return (
-		<StyledFooter>
+		<StyledFooter mainFooter>
 			<Form />
-      <hr />
+			<hr />
 			<div>Footer nav goes here</div>
 		</StyledFooter>
 	)
