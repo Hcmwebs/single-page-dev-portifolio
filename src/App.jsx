@@ -10,7 +10,7 @@ const App = () => {
 			<Container>
 				<Header />
 				<MainBody />
-				<Footer/>
+				<Footer />
 			</Container>
 		</ThemeProvider>
 	)
