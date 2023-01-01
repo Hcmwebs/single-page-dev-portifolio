@@ -38,7 +38,7 @@ const SingleProject = ({
 
 			<div className='cardBody'>
 				<h2>{title}</h2>
-				<p className='skills'>{skills}</p>
+				<p>{skills}</p>
 				<StyledFlex
 					jc='space-between'
 					align='center'
