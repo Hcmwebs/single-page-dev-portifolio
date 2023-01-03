@@ -22,7 +22,7 @@ const StyledLink = styled.a`
 	&:hover {
 		color: var(--accent);
 		&::before {
-			width: 128px;
+			width: 100%;
 			background-color: var(--accent);
 		}
 	}
