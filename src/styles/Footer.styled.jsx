@@ -7,10 +7,7 @@ const StyledFooter = styled.footer`
 	gap: 2.5rem;
 	padding-block: 3.75rem;
 	background-color: ${({ theme }) => theme.darkTheme.footer};
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	right: 0;
+	margin-top: auto;
 	hr {
 		width: 100%;
 		padding-inline: 1rem;
