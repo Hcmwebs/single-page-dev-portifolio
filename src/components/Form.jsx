@@ -1,8 +1,9 @@
 import React from 'react'
+import { StyledButton, StyledForm, StyledFormWrapper } from '../styles'
 
 const Form = () => {
 	return (
-		<div>
+		<StyledFormWrapper>
 			<div className='intro'>
 				<h2>Contact</h2>
 				<p>
@@ -10,13 +11,13 @@ const Form = () => {
 					fill in the form, and I’ll get back to you as soon as possible.
 				</p>
 			</div>
-			<form>
+			<StyledForm>
 				<div className='form-group'>
 					<input type='text' name='Name' id='name' />
 				</div>
-        <button type='submit'>Send Message</button>
-			</form>
-		</div>
+				<StyledButton type='submit' className='submit'>Send message</StyledButton>
+			</StyledForm>
+		</StyledFormWrapper>
 	)
 }
 

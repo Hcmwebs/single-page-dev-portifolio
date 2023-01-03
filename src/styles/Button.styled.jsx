@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const StyledButton = styled.button`
 	width: max-content;
-	padding: 0.75rem 1rem;
+	padding-block: 0.75rem;
 	font-weight: 700;
 	font-size: 1rem;
 	line-height: 26px;
@@ -15,7 +15,7 @@ const StyledButton = styled.button`
 	justify-items: start;
 	position: relative;
 	cursor: pointer;
-	border-bottom: none;
+	border: none;
 	outline: none;
 	background-color: transparent;
 	transition: var(--transition-2);
@@ -37,6 +37,9 @@ const StyledButton = styled.button`
 		background-color: var(--accent);
 		transition: var(--transition-2);
 	}
+  &.submit{
+    justify-self:end;
+  }
 `
 
 export default StyledButton
