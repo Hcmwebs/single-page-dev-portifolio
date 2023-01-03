@@ -25,14 +25,14 @@ const StyledRings = styled.div`
 		}
 	}
 	&.main {
-		top: 1370px;
+		top: 705px;
 		left: 189px;
 		@media (min-width: 768px) {
-			top: 1100px;
+			top: 400px;
 			left: 600px;
 		}
 		@media (min-width: 1440px) {
-			top: 1115px;
+			top: 350px;
 			left: 925px;
 		}
 	}
