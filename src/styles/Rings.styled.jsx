@@ -28,12 +28,12 @@ const StyledRings = styled.div`
 		top: 705px;
 		left: 189px;
 		@media (min-width: 768px) {
-			top: 400px;
-			left: 600px;
+			top: 450px;
+			left: 550px;
 		}
 		@media (min-width: 1440px) {
-			top: 350px;
-			left: 925px;
+			top: 375px;
+			left: 1080px;
 		}
 	}
 `
