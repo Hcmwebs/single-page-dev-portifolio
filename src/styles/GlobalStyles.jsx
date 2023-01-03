@@ -37,6 +37,7 @@ const GlobalStyles = createGlobalStyle`
 html {
   font-size: 100%;
   color-scheme: dark light;
+  height: 100%;
 } /*16px*/
 
 body {
@@ -45,9 +46,9 @@ body {
   line-height: 1.75;
   color: var(--bodyColor);
   background:var(--bgColor);
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 p{
