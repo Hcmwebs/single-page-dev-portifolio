@@ -11,8 +11,8 @@ const StyledLink = styled.a`
 	text-transform: uppercase;
 	text-align: center;
 	display: grid;
-	place-items:center;
-	justify-items:start;
+	place-items: center;
+	justify-items: start;
 	position: relative;
 	cursor: pointer;
 	transition: var(--transition-2);
@@ -36,8 +36,6 @@ const StyledLink = styled.a`
 		background-color: var(--accent);
 		transition: var(--transition-2);
 	}
-
-
 `
 
 export default StyledLink
