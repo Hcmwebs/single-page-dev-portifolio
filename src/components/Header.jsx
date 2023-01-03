@@ -4,14 +4,14 @@ import { Hero, Nav } from '../components'
 
 const Header = () => {
 	return (
-		<Container>
-			<StyledHeader>
+		<StyledHeader>
+			<Container>
 				<StyledRings className='header' />
 				<StyledCircle className='header' />
 				<Nav />
 				<Hero />
-			</StyledHeader>
-		</Container>
+			</Container>
+		</StyledHeader>
 	)
 }
 
