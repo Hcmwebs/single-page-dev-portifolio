@@ -10,10 +10,10 @@ const Container = styled.div`
 	place-items: center;
 	position: relative;
 	overflow: hidden;
-	@media (min-width: ${({ theme }) => theme.screens.tablet}) {
+	@media (min-width: 768px) {
 		padding-inline: 2rem;
 	}
-	@media (min-width: ${({ theme }) => theme.screens.desktop}) {
+	@media (min-width: 1440px) {
 		padding-inline: 10rem;
 	}
 `
