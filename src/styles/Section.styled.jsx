@@ -2,14 +2,17 @@ import styled from 'styled-components'
 
 const StyledSection = styled.section`
 	width: 100%;
+	padding-block: 2.5rem;
 	min-height: 50vh;
 	display: grid;
 	place-items: center;
 	gap: 2.5rem;
 	@media (min-width: 768px) {
+		padding-block: 4rem;
 		gap: 3.75rem;
 	}
 	@media (min-width: 1440px) {
+		padding-block: 6rem;
 		gap: 5rem;
 	}
 
@@ -27,6 +30,7 @@ const StyledSection = styled.section`
 			@media (min-width: 768px) {
 				padding-block: 3.25rem;
 				gap: 3.25rem 0.5rem;
+				border-bottom: none;
 			}
 			@media (min-width: 1440px) {
 				padding-block: 4.5rem;
