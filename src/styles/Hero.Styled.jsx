@@ -26,7 +26,7 @@ const StyledHero = styled.div`
 		@media (min-width: 1440px) {
 			width: 445px;
 			height: 720px;
-			left: 70%;
+			left: 72%;
 		}
 	}
 
@@ -102,7 +102,6 @@ const StyledHero = styled.div`
 			}
 		}
 	}
-
 `
 
 export default StyledHero
