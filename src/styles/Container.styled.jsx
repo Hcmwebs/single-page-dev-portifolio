@@ -16,6 +16,5 @@ const Container = styled.div`
 	@media (min-width: ${({ theme }) => theme.screens.desktop}) {
 		padding-inline: 10rem;
 	}
-
 `
 export default Container
