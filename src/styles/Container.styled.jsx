@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 
 const Container = styled.div`
-	color: ${({ theme }) => theme.darkTheme.body};
-	background-color: ${({ theme }) => theme.darkTheme.bg};
 	width: min(100%, var(--maxWidth));
 	padding-inline: 1rem;
 	margin: 0 auto;
