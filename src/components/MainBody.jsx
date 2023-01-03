@@ -4,13 +4,13 @@ import { Container, StyledMain, StyledRings } from '../styles'
 
 const MainBody = () => {
 	return (
-		<Container>
-			<StyledMain>
+		<StyledMain>
+			<Container>
 				<StyledRings className='main' />
 				<Skills />
 				<Projects />
-			</StyledMain>
-		</Container>
+			</Container>
+		</StyledMain>
 	)
 }
 
