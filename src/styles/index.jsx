@@ -13,6 +13,9 @@ import StyledSection from './Section.styled'
 import StyledFlex from './Flex.styled'
 import StyledProject from './SingleProject.styled'
 import StyledFooter from './Footer.styled'
+import StyledFormWrapper from './FormWrapper.Styled'
+import StyledForm from './Form.Styled'
+import StyledButton from './Button.styled'
 
 export {
 	GlobalStyles,
@@ -30,4 +33,7 @@ export {
 	StyledSection,
 	StyledProject,
 	StyledFooter,
+	StyledFormWrapper,
+	StyledForm,
+	StyledButton,
 }
