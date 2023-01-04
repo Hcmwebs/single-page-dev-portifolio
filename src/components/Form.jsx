@@ -13,13 +13,13 @@ const Form = () => {
 			</div>
 			<StyledForm>
 				<div className='form-group'>
-					<input type='text' name='Name' id='name' placeholder='Name' />
+					<input type='text' name='Name' id='name' placeholder='Name' aria-label="name" />
 				</div>
 				<div className='form-group'>
-					<input type='email' name='email' id='email' placeholder=' Email' />
+					<input type='email' name='email' id='email' placeholder=' Email' aria-label="email"/>
 				</div>
 				<div className='form-group'>
-					<textarea name='message' id='message' placeholder='Message' />
+					<textarea name='message' id='message' placeholder='Message' aria-label="message"/>
 				</div>
 				<StyledButton type='submit' className='submit'>
 					Send message

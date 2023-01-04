@@ -10,6 +10,7 @@ const StyledFooter = styled.footer`
 	hr {
 		width: 100%;
 	}
+
 `
 
 export default StyledFooter
