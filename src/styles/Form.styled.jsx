@@ -5,6 +5,7 @@ const StyledForm = styled.form`
 	display: grid;
 	place-items: center;
 	gap: 2rem;
+	padding-bottom: 5.75rem;
 
 	.form-group {
 		width: 100%;
@@ -13,13 +14,24 @@ const StyledForm = styled.form`
 		justify-items: start;
 		border-bottom: 1px solid var(--bodyColor);
 
-		input {
+		input,
+		textarea {
 			width: 100%;
 			padding: 1rem;
 			outline: none;
 			border: none;
 			color: var(--bodyColor);
 			background-color: transparent;
+			&::placeholder {
+				text-transform: uppercase;
+			}
+		}
+		textarea {
+			resize: none;
+			min-height: 100px;
+			&::placeholder {
+				text-transform: uppercase;
+			}
 		}
 	}
 `
