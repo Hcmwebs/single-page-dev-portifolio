@@ -1,17 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const FormInput = (props) => {
-	const { label, id, handleChange, error, ...inputs } = props
+	const { label, id, handleChange, error, errorMessage, ...inputProps } = props
+
+	const [focused, setFocused] = useState(false)
+
+	const handleFocused = () => {
+		setFocused(true)
+	}
+
 	return (
 		<div className='form-group'>
 			<input
-				type='text'
-				name='Name'
-				id='name'
-				placeholder='Name'
-				aria-label='name'
+				{...inputProps}
+				aria-label={label}
+				onChange={handleChange}
+				onBlur={handleFocused}
+        onFocus = {() =>inputProps.name === 'message' && setFocused(true)}
+				focused={focused.toString()}
+        className = {`${error ? 'success' : 'error'}`}
 			/>
-			<span>Error message </span>
+			<span className='error'>{errorMessage} </span>
 		</div>
 	)
 }
