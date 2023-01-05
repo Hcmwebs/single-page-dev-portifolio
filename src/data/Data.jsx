@@ -76,3 +76,30 @@ export const projects = [
 		code: 'view code',
 	},
 ]
+
+export const inputs = [
+	{
+		id: 1,
+		name: 'name',
+		type: 'text',
+		placeholder: 'name',
+		errorMessage: '',
+		label: 'name',
+	},
+	{
+		id: 2,
+		email: 'email',
+		type: 'email',
+		placeholder: 'email',
+		errorMessage: '',
+		label: 'email',
+	},
+	{
+		id: 3,
+		message: 'message',
+		type: 'text',
+		placeholder: 'message',
+		errorMessage: '',
+		label: 'message',
+	},
+]
