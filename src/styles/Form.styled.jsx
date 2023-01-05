@@ -14,14 +14,6 @@ const StyledForm = styled.form`
 		justify-items: start;
 		gap: 0.25rem;
 		transition: var(--transition-2);
-		&.error input,
-		textarea {
-			border-bottom: 1px solid var(--error);
-		}
-		&.success > input,
-		textarea {
-			border-bottom: 1px solid var(--accent);
-		}
 
 		input,
 		textarea {
@@ -35,10 +27,22 @@ const StyledForm = styled.form`
 			border-bottom: 1px solid var(--bodyColor);
 			color: var(--bodyColor);
 			background-color: transparent;
+			transition: var(--transition-2);
 			&::placeholder {
 				text-transform: uppercase;
 				font-size: 1rem;
 				font-weight: var(--medium);
+			}
+
+			&:valid ~ .success {
+				border-bottom: 1px solid var(--accent);
+			}
+
+			&:invalid[focused='true'] {
+				border-bottom: 1px solid var(--error);
+			}
+			&:invalid[focused='true'] ~ .error {
+				display: block;
 			}
 		}
 		textarea {
@@ -53,7 +57,8 @@ const StyledForm = styled.form`
 		line-height: 1rem;
 		justify-self: end;
 		color: var(--error);
-		text-transform: capitalize;
+		text-transform: initial;
+		display: none;
 	}
 `
 
