@@ -9,6 +9,7 @@ import Projects from './Projects'
 import SingleProject from './SingleProject'
 import Footer from './Footer'
 import Form from './Form'
+import FormInput from './FormInput'
 
 export {
 	Header,
@@ -22,4 +23,5 @@ export {
 	SingleProject,
 	Footer,
 	Form,
+	FormInput,
 }
