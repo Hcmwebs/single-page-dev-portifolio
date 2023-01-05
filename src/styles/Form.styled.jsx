@@ -4,7 +4,6 @@ const StyledForm = styled.form`
 	width: min(100%, 445px);
 	display: grid;
 	place-items: center;
-	padding: 2rem;
 	padding-bottom: 5.75rem;
 	gap: 2rem;
 
@@ -26,6 +25,9 @@ const StyledForm = styled.form`
 
 		input,
 		textarea {
+			font-size: 1rem;
+			font-weight: var(--medium);
+			line-height: 26px;
 			width: 100%;
 			padding: 1rem;
 			outline: none;
@@ -35,6 +37,8 @@ const StyledForm = styled.form`
 			background-color: transparent;
 			&::placeholder {
 				text-transform: uppercase;
+				font-size: 1rem;
+				font-weight: var(--medium);
 			}
 		}
 		textarea {
@@ -44,11 +48,12 @@ const StyledForm = styled.form`
 	}
 
 	.error {
-		font-weight: var(--medium);
 		font-size: 0.75rem;
+		font-weight: var(--medium);
 		line-height: 1rem;
 		justify-self: end;
 		color: var(--error);
+		text-transform: capitalize;
 	}
 `
 
