@@ -23,7 +23,8 @@ const Form = () => {
 		setValues({ ...values, [name]: value })
 	}
 	const handleSubmit = (e) => {
-		e.preventDefault()
+		e.preventDefault();
+		
 	}
 	return (
 		<StyledFormWrapper>
@@ -45,6 +46,7 @@ const Form = () => {
 							values={values[input.name]}
 							onChange={handleChange}
 							error={error}
+							setError= {setError}
 						/>
 					)
 				})}
