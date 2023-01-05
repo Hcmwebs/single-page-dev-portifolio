@@ -4,15 +4,25 @@ const StyledForm = styled.form`
 	width: min(100%, 445px);
 	display: grid;
 	place-items: center;
-	gap: 2rem;
+	padding: 2rem;
 	padding-bottom: 5.75rem;
+	gap: 2rem;
 
 	.form-group {
 		width: 100%;
 		display: grid;
 		place-items: center;
 		justify-items: start;
-		border-bottom: 1px solid var(--bodyColor);
+		gap: 0.25rem;
+		transition: var(--transition-2);
+		&.error input,
+		textarea {
+			border-bottom: 1px solid var(--error);
+		}
+		&.success > input,
+		textarea {
+			border-bottom: 1px solid var(--accent);
+		}
 
 		input,
 		textarea {
@@ -20,6 +30,7 @@ const StyledForm = styled.form`
 			padding: 1rem;
 			outline: none;
 			border: none;
+			border-bottom: 1px solid var(--bodyColor);
 			color: var(--bodyColor);
 			background-color: transparent;
 			&::placeholder {
@@ -29,10 +40,15 @@ const StyledForm = styled.form`
 		textarea {
 			resize: none;
 			min-height: 100px;
-			&::placeholder {
-				text-transform: uppercase;
-			}
 		}
+	}
+
+	.error {
+		font-weight: var(--medium);
+		font-size: 0.75rem;
+		line-height: 1rem;
+		justify-self: end;
+		color: var(--error);
 	}
 `
 
