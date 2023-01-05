@@ -1,3 +1,4 @@
+
 import project1Large from '../assets/thumbnail-project-1-large.webp'
 import project1Small from '../assets/thumbnail-project-1-small.webp'
 import project2Large from '../assets/thumbnail-project-2-large.webp'
@@ -83,23 +84,26 @@ export const inputs = [
 		name: 'name',
 		type: 'text',
 		placeholder: 'name',
-		errorMessage: '',
+		errorMessage: 'Sorry, name is required!',
 		label: 'name',
+		required: true,
 	},
 	{
 		id: 2,
 		email: 'email',
 		type: 'email',
 		placeholder: 'email',
-		errorMessage: '',
+		errorMessage: 'Sorry, invalid format here!',
 		label: 'email',
+		required: true,
 	},
 	{
 		id: 3,
 		message: 'message',
 		type: 'text',
 		placeholder: 'message',
-		errorMessage: '',
+		errorMessage: 'Please, let me know how can I help you.',
 		label: 'message',
+		required: true,
 	},
 ]
