@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { inputs } from '../data/Data'
+import { FormInput } from './index'
 import {
 	StyledButton,
 	StyledForm,
@@ -7,6 +9,22 @@ import {
 } from '../styles'
 
 const Form = () => {
+	const [values, setValues] = useState({
+		name: '',
+		email: '',
+		message: '',
+	})
+	const [error, setError] = useState(false)
+
+	const handleChange = (e) => {
+		const name = e.target.name
+		const value = e.target.value
+
+		setValues({ ...values, [name]: value })
+	}
+	const handleSubmit = (e) => {
+		e.preventDefault()
+	}
 	return (
 		<StyledFormWrapper>
 			<div className='intro'>
@@ -18,8 +36,20 @@ const Form = () => {
 					fill in the form, and I’ll get back to you as soon as possible.
 				</p>
 			</div>
-			<StyledForm>
-				<div className='form-group error'>
+			<StyledForm onSubmit={handleSubmit}>
+				{inputs.map((input) => {
+					return (
+						<FormInput
+							key={input.id}
+							{...input}
+							values={values[input.name]}
+							onChange={handleChange}
+							error={error}
+						/>
+					)
+				})}
+
+				{/* <div className='form-group error'>
 					<input
 						type='text'
 						name='Name'
@@ -27,7 +57,7 @@ const Form = () => {
 						placeholder='Name'
 						aria-label='name'
 					/>
-				<span className='error'>Error message </span>
+					<span className='error'>Error message </span>
 				</div>
 
 				<div className='form-group'>
@@ -47,7 +77,7 @@ const Form = () => {
 						placeholder='Message'
 						aria-label='message'
 					/>
-				</div>
+				</div> */}
 				<StyledButton type='submit' className='submit'>
 					Send message
 				</StyledButton>
