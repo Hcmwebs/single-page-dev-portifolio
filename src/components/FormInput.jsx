@@ -16,11 +16,11 @@ const FormInput = (props) => {
 				aria-label={label}
 				onChange={handleChange}
 				onBlur={handleFocused}
-        onFocus = {() =>inputProps.name === 'message' && setFocused(true)}
+				onFocus={() => inputProps.name === 'message' && setFocused(true)}
 				focused={focused.toString()}
-        className = {`${error ? 'success' : 'error'}`}
+				className={`${error ? 'success' : 'error'}`}
 			/>
-			<span className='error'>{errorMessage} </span>
+			{!error && <span className='error'>{errorMessage} </span>}
 		</div>
 	)
 }
