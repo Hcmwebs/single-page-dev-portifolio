@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { CgDanger } from "react-icons/cg";
+
 
 const FormInput = (props) => {
 	const { label, id, handleChange, error, errorMessage, ...inputProps } = props
@@ -18,8 +20,9 @@ const FormInput = (props) => {
 				onBlur={handleFocused}
 				onFocus={() => inputProps.name === 'message' && setFocused(true)}
 				focused={focused.toString()}
-				className={`${error ? 'success' : 'error'}`}
+
 			/>
+			{!error && <CgDanger className= 'icon'/>}
 			{!error && <span className='error'>{errorMessage} </span>}
 		</div>
 	)

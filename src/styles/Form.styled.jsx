@@ -14,6 +14,7 @@ const StyledForm = styled.form`
 		justify-items: start;
 		gap: 0.25rem;
 		transition: var(--transition-2);
+		position: relative;
 
 		input,
 		textarea {
@@ -44,11 +45,21 @@ const StyledForm = styled.form`
 			&:invalid[focused='true'] ~ .error {
 				display: block;
 			}
+			&:invalid[focused='true'] ~ .icon {
+				display: block;
+			}
 		}
 		textarea {
 			resize: none;
 			min-height: 100px;
 		}
+	}
+	.icon {
+		position: absolute;
+		top: 2rem;
+		right: 0;
+		color: var(--error);
+		display: none;
 	}
 
 	.error {

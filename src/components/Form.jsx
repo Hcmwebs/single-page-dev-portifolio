@@ -24,7 +24,6 @@ const Form = () => {
 	}
 	const handleSubmit = (e) => {
 		e.preventDefault()
-		
 	}
 	return (
 		<StyledFormWrapper>
