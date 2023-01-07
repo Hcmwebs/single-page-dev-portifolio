@@ -1,8 +1,9 @@
 import React from 'react'
+import { StyledSocials } from '../styles'
 
 const Socials = () => {
 	return (
-		<div className='socials'>
+		<StyledSocials>
 			<a href='#' target='_blank' rel='noopener noreferrer'>
 				<svg
 					className='icon'
@@ -53,7 +54,7 @@ const Socials = () => {
 					/>
 				</svg>
 			</a>
-		</div>
+		</StyledSocials>
 	)
 }
 
