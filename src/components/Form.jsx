@@ -76,7 +76,6 @@ const Form = () => {
 						aria-label='name'
 						value={contact.name}
 						onChange={handleChange}
-<<<<<<< HEAD
 						onFocus={() => setFocused(true)}
 						onBlur={handleFocused}
 						focused={focused.toString()}
@@ -84,11 +83,6 @@ const Form = () => {
 					/>
 					{error && <CgDanger className='icon' />}
 					{error && <span className='error'>Please, provide a name!</span>}
-=======
-					/>
-					{error && <CgDanger className='icon' />}
-					{error && <span className='error'>{errorMessage}</span>}
->>>>>>> 647e9bcf13009aa8f3972175be70e59b9916f32f
 				</div>
 
 				<div className='form-group'>
