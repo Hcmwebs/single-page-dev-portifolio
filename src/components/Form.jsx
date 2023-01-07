@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-import { inputs } from '../data/Data'
-import { FormInput } from './index'
+import { CgDanger } from 'react-icons/cg'
 import {
 	StyledButton,
 	StyledForm,
@@ -9,21 +8,41 @@ import {
 } from '../styles'
 
 const Form = () => {
-	const [values, setValues] = useState({
+	const [contact, setContact] = useState({
 		name: '',
 		email: '',
 		message: '',
 	})
-	const [error, setError] = useState(false)
+	const [contacts, setContacts] = useState([])
+	const [error, setError] = useState(true)
+	const [errorMessage, setErrorMessage] = useState('')
 
 	const handleChange = (e) => {
 		const name = e.target.name
 		const value = e.target.value
-
-		setValues({ ...values, [name]: value })
+		setContact({ ...contact, [name]: value })
 	}
+
 	const handleSubmit = (e) => {
 		e.preventDefault()
+		if (contact.name && contact.email && contact.message) {
+			setError(false)
+			const newContact = { ...contact, id: new Date().getTime().toString() }
+			setContacts([...contacts, newContact])
+			setContact({ name: '', email: '', message: '' })
+		}
+		if (!contact.name) {
+			setError(true)
+			setErrorMessage('Please enter your name')
+		}
+		if (!contact.email) {
+			setError(true)
+			setErrorMessage('Sorry, invalid format here')
+		}
+		if (!contact.message) {
+			setError(true)
+			setErrorMessage('Please, how can I be of your service?')
+		}
 	}
 	return (
 		<StyledFormWrapper>
@@ -37,27 +56,18 @@ const Form = () => {
 				</p>
 			</div>
 			<StyledForm onSubmit={handleSubmit}>
-				{inputs.map((input) => {
-					return (
-						<FormInput
-							key={input.id}
-							{...input}
-							values={values[input.name]}
-							onChange={handleChange}
-							error={error}
-						/>
-					)
-				})}
-
-				{/* <div className='form-group error'>
+				<div className='form-group'>
 					<input
 						type='text'
-						name='Name'
+						name='name'
 						id='name'
 						placeholder='Name'
 						aria-label='name'
+						value={contact.name}
+						onChange={handleChange}
 					/>
-					<span className='error'>Error message </span>
+					{error && <CgDanger className='icon' />}
+					{error && <span className='error'>{errorMessage}</span>}
 				</div>
 
 				<div className='form-group'>
@@ -67,8 +77,13 @@ const Form = () => {
 						id='email'
 						placeholder=' Email'
 						aria-label='email'
+						error={() => setError('Sorry, invalid format here')}
 						required
+						value={contact.email}
+						onChange={handleChange}
 					/>
+					{error && <CgDanger className='icon' />}
+					{error && <span className='error'>{errorMessage}</span>}
 				</div>
 				<div className='form-group'>
 					<textarea
@@ -76,12 +91,28 @@ const Form = () => {
 						id='message'
 						placeholder='Message'
 						aria-label='message'
+						error={() => setError('Please how can I help?')}
+						value={contact.message}
+						onChange={handleChange}
 					/>
-				</div> */}
+					{error && <CgDanger className='icon' />}
+					{error && <span className='error'>{errorMessage}</span>}
+				</div>
 				<StyledButton type='submit' className='submit'>
 					Send message
 				</StyledButton>
 			</StyledForm>
+
+			{contacts.map((contact) => {
+				const { id, name, email, message } = contact
+				return (
+					<div key={id}>
+						<h4>{name}</h4>
+						<h5>{email}</h5>
+						<p>{message}</p>
+					</div>
+				)
+			})}
 		</StyledFormWrapper>
 	)
 }
