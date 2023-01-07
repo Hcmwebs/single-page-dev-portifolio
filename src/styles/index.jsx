@@ -5,6 +5,8 @@ import GlobalStyles from './GlobalStyles'
 import theme from './Themes.styled'
 import StyledHeader from './Header.styled'
 import StyledNav from './Nav.Styled'
+import StyledLogo from './Logo.styled'
+import StyledSocials from './Socials.Styled'
 import StyledHero from './Hero.Styled'
 import StyledTitle from './Title.styled'
 import StyledLink from './Link.styled'
@@ -16,6 +18,7 @@ import StyledFooter from './Footer.styled'
 import StyledFormWrapper from './FormWrapper.Styled'
 import StyledForm from './Form.Styled'
 import StyledButton from './Button.styled'
+import StyledSecNav from './SecNav.styled'
 
 export {
 	GlobalStyles,
@@ -26,6 +29,8 @@ export {
 	theme,
 	StyledHeader,
 	StyledNav,
+	StyledLogo,
+	StyledSocials,
 	StyledHero,
 	StyledTitle,
 	StyledLink,
@@ -36,4 +41,5 @@ export {
 	StyledFormWrapper,
 	StyledForm,
 	StyledButton,
+	StyledSecNav,
 }
