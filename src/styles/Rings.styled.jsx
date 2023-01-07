@@ -36,6 +36,18 @@ const StyledRings = styled.div`
 			left: 1080px;
 		}
 	}
+	&.footer {
+		top: 370px;
+		left: -370px;
+		@media (min-width: 768px) {
+			top: 485px;
+			left: -300px;
+		}
+		@media (min-width: 1440px) {
+			top: 200px;
+			left: -100px;
+		}
+	}
 `
 
 export default StyledRings
