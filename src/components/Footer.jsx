@@ -1,14 +1,15 @@
 import React from 'react'
-import { Form } from './index'
-import { Container, StyledFooter } from '../styles'
+import { Form, SecNav } from './index'
+import { Container, StyledFooter, StyledRings } from '../styles'
 
 const Footer = () => {
 	return (
 		<StyledFooter mainFooter>
 			<Container>
+				<StyledRings className='footer' />
 				<Form />
 				<hr />
-				<div>Footer nav goes here</div>
+				<SecNav />
 			</Container>
 		</StyledFooter>
 	)
