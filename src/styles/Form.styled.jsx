@@ -35,7 +35,7 @@ const StyledForm = styled.form`
 				font-weight: var(--medium);
 			}
 
-			&:valid ~ .success {
+			&:valid[focused='true'] {
 				border-bottom: 1px solid var(--accent);
 			}
 
