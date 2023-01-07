@@ -15,11 +15,15 @@ const Form = () => {
 	})
 	const [contacts, setContacts] = useState([])
 	const [error, setError] = useState(true)
+<<<<<<< HEAD
 	const [focused, setFocused] = useState(false)
 
 	const handleFocused = () => {
 		setFocused(true)
 	}
+=======
+	const [errorMessage, setErrorMessage] = useState('')
+>>>>>>> 647e9bcf13009aa8f3972175be70e59b9916f32f
 
 	const handleChange = (e) => {
 		const name = e.target.name
@@ -35,6 +39,21 @@ const Form = () => {
 			setContacts([...contacts, newContact])
 			setContact({ name: '', email: '', message: '' })
 		}
+<<<<<<< HEAD
+=======
+		if (!contact.name) {
+			setError(true)
+			setErrorMessage('Please enter your name')
+		}
+		if (!contact.email) {
+			setError(true)
+			setErrorMessage('Sorry, invalid format here')
+		}
+		if (!contact.message) {
+			setError(true)
+			setErrorMessage('Please, how can I be of your service?')
+		}
+>>>>>>> 647e9bcf13009aa8f3972175be70e59b9916f32f
 	}
 	return (
 		<StyledFormWrapper>
@@ -57,6 +76,7 @@ const Form = () => {
 						aria-label='name'
 						value={contact.name}
 						onChange={handleChange}
+<<<<<<< HEAD
 						onFocus={() => setFocused(true)}
 						onBlur={handleFocused}
 						focused={focused.toString()}
@@ -64,6 +84,11 @@ const Form = () => {
 					/>
 					{error && <CgDanger className='icon' />}
 					{error && <span className='error'>Please, provide a name!</span>}
+=======
+					/>
+					{error && <CgDanger className='icon' />}
+					{error && <span className='error'>{errorMessage}</span>}
+>>>>>>> 647e9bcf13009aa8f3972175be70e59b9916f32f
 				</div>
 
 				<div className='form-group'>
@@ -73,15 +98,22 @@ const Form = () => {
 						id='email'
 						placeholder=' Email'
 						aria-label='email'
+						error={() => setError('Sorry, invalid format here')}
 						required
 						value={contact.email}
 						onChange={handleChange}
+<<<<<<< HEAD
 						onBlur={handleFocused}
 						onFocus={() => setFocused(true)}
 						focused={focused.toString()}
 					/>
 					{error && <CgDanger className='icon' />}
 					{error && <span className='error'>Sorry, invalid format here</span>}
+=======
+					/>
+					{error && <CgDanger className='icon' />}
+					{error && <span className='error'>{errorMessage}</span>}
+>>>>>>> 647e9bcf13009aa8f3972175be70e59b9916f32f
 				</div>
 				<div className='form-group'>
 					<textarea
@@ -89,6 +121,7 @@ const Form = () => {
 						id='message'
 						placeholder='Message'
 						aria-label='message'
+<<<<<<< HEAD
 						value={contact.message}
 						onChange={handleChange}
 						onFocus={() => contact.name === 'message' && setFocused(true)}
@@ -98,6 +131,14 @@ const Form = () => {
 					/>
 					{error && <CgDanger className='icon' />}
 					{error && <span className='error'> Please how can I help?</span>}
+=======
+						error={() => setError('Please how can I help?')}
+						value={contact.message}
+						onChange={handleChange}
+					/>
+					{error && <CgDanger className='icon' />}
+					{error && <span className='error'>{errorMessage}</span>}
+>>>>>>> 647e9bcf13009aa8f3972175be70e59b9916f32f
 				</div>
 				<StyledButton type='submit' className='submit'>
 					Send message
