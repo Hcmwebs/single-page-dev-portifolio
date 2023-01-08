@@ -35,11 +35,11 @@ const StyledForm = styled.form`
 				font-weight: var(--medium);
 			}
 
-			&:valid[focused='true'] {
+			&:valid{
 				border-bottom: 1px solid var(--accent);
 			}
 
-			&:invalid[focused='true'] {
+			&:invalid{
 				border-bottom: 1px solid var(--error);
 			}
 			&:invalid[focused='true'] ~ .error {
@@ -52,7 +52,6 @@ const StyledForm = styled.form`
 		textarea {
 			resize: none;
 			min-height: 100px;
-		}
 	}
 	.icon {
 		position: absolute;
