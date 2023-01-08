@@ -34,6 +34,7 @@ const Form = () => {
 			const newContact = { ...contact, id: new Date().getTime().toString() }
 			setContacts([...contacts, newContact])
 			setContact({ name: '', email: '', message: '' })
+			setFocused(false)
 		}
 	}
 	return (
@@ -59,6 +60,7 @@ const Form = () => {
 						onChange={handleChange}
 						onBlur={handleFocused}
 						focused={focused.toString()}
+						onFocus={() => setFocused(false)}
 						required
 					/>
 					{error && <CgDanger className='icon' />}
@@ -76,6 +78,7 @@ const Form = () => {
 						value={contact.email}
 						onChange={handleChange}
 						onBlur={handleFocused}
+						onFocus={() => setFocused(false)}
 						focused={focused.toString()}
 					/>
 					{error && <CgDanger className='icon' />}
@@ -89,13 +92,13 @@ const Form = () => {
 						aria-label='message'
 						value={contact.message}
 						onChange={handleChange}
-						onFocus={() => setFocused(true)}
+						onFocus={handleFocused}
 						onBlur={handleFocused}
 						focused={focused.toString()}
 						required
 					/>
-					{error && <CgDanger className='icon' />}
-					{error && <span className='error'> Please how can I help?</span>}
+					{!error && <CgDanger className='icon' />}
+					{!error && <span className='error'> Please how can I help?</span>}
 				</div>
 				<StyledButton type='submit' className='submit'>
 					Send message
