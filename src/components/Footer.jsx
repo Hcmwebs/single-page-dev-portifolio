@@ -4,7 +4,7 @@ import { Container, StyledFooter, StyledRings } from '../styles'
 
 const Footer = () => {
 	return (
-		<StyledFooter mainFooter>
+		<StyledFooter>
 			<Container>
 				<StyledRings className='footer' />
 				<Form />
