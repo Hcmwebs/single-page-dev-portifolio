@@ -16,7 +16,7 @@ const StyledForm = styled.form`
 		transition: var(--transition-2);
 		position: relative;
 
-		input{
+		.input {
 			font-size: 1rem;
 			font-weight: var(--medium);
 			line-height: 26px;
@@ -34,11 +34,11 @@ const StyledForm = styled.form`
 				font-weight: var(--medium);
 			}
 
-			&:valid{
+			&:valid {
 				border-bottom: 1px solid var(--accent);
 			}
 
-			&:invalid[focused='true']{
+			&:invalid[focused='true'] {
 				border-bottom: 1px solid var(--error);
 			}
 			&:invalid[focused='true'] ~ .error {
@@ -48,7 +48,7 @@ const StyledForm = styled.form`
 				display: block;
 			}
 		}
-		textarea {
+		.textArea {
 			resize: none;
 			min-height: 100px;
 			font-size: 1rem;
@@ -67,11 +67,11 @@ const StyledForm = styled.form`
 				font-size: 1rem;
 				font-weight: var(--medium);
 			}
-			&:valid{
+			&:valid {
 				border-bottom: 1px solid var(--accent);
 			}
 
-			&:invalid[focused='true']{
+			&:invalid[focused='true'] {
 				border-bottom: 1px solid var(--error);
 			}
 			&:invalid[focused='true'] ~ .error {
@@ -80,23 +80,24 @@ const StyledForm = styled.form`
 			&:invalid[focused='true'] ~ .icon {
 				display: block;
 			}
-	}
-	.icon {
-		position: absolute;
-		top: 2rem;
-		right: 0;
-		color: var(--error);
-		display: none;
-	}
+		}
+		.icon {
+			position: absolute;
+			top: 2rem;
+			right: 0;
+			color: var(--error);
+			display: none;
+		}
 
-	.error {
-		font-size: 0.75rem;
-		font-weight: var(--medium);
-		line-height: 1rem;
-		justify-self: end;
-		color: var(--error);
-		text-transform: initial;
-		display: none;
+		.error {
+			font-size: 0.75rem;
+			font-weight: var(--medium);
+			line-height: 1rem;
+			justify-self: end;
+			color: var(--error);
+			text-transform: initial;
+			display: none;
+		}
 	}
 `
 
