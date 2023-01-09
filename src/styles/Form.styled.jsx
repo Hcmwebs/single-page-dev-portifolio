@@ -16,8 +16,7 @@ const StyledForm = styled.form`
 		transition: var(--transition-2);
 		position: relative;
 
-		input,
-		textarea {
+		input{
 			font-size: 1rem;
 			font-weight: var(--medium);
 			line-height: 26px;
@@ -39,7 +38,7 @@ const StyledForm = styled.form`
 				border-bottom: 1px solid var(--accent);
 			}
 
-			&:invalid{
+			&:invalid[focused='true']{
 				border-bottom: 1px solid var(--error);
 			}
 			&:invalid[focused='true'] ~ .error {
@@ -52,6 +51,35 @@ const StyledForm = styled.form`
 		textarea {
 			resize: none;
 			min-height: 100px;
+			font-size: 1rem;
+			font-weight: var(--medium);
+			line-height: 26px;
+			width: 100%;
+			padding: 1rem;
+			outline: none;
+			border: none;
+			border-bottom: 1px solid var(--bodyColor);
+			color: var(--bodyColor);
+			background-color: transparent;
+			transition: var(--transition-2);
+			&::placeholder {
+				text-transform: uppercase;
+				font-size: 1rem;
+				font-weight: var(--medium);
+			}
+			&:valid{
+				border-bottom: 1px solid var(--accent);
+			}
+
+			&:invalid[focused='true']{
+				border-bottom: 1px solid var(--error);
+			}
+			&:invalid[focused='true'] ~ .error {
+				display: block;
+			}
+			&:invalid[focused='true'] ~ .icon {
+				display: block;
+			}
 	}
 	.icon {
 		position: absolute;
