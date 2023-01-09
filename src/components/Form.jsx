@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import { CgDanger } from 'react-icons/cg'
+import { FormIntro, Button } from './index'
 import {
-	StyledButton,
 	StyledForm,
+	StyledFormGroup,
 	StyledFormWrapper,
-	StyledTitle,
 } from '../styles'
 
 const Form = () => {
@@ -14,7 +14,7 @@ const Form = () => {
 		message: '',
 	})
 	const [contacts, setContacts] = useState([])
-	const [error, setError] = useState(true)
+	const [error, setError] = useState(false)
 	const [focused, setFocused] = useState(false)
 
 	const handleFocused = () => {
@@ -42,17 +42,9 @@ const Form = () => {
 
 	return (
 		<StyledFormWrapper>
-			<div className='intro'>
-				<StyledTitle>
-					<h2>Contact</h2>
-				</StyledTitle>
-				<p>
-					I would love to hear about your project and how I could help. Please
-					fill in the form, and I’ll get back to you as soon as possible.
-				</p>
-			</div>
+			<FormIntro />
 			<StyledForm onSubmit={handleSubmit}>
-				<div className='form-group'>
+				<StyledFormGroup>
 					<input
 						type='text'
 						name='name'
@@ -62,15 +54,15 @@ const Form = () => {
 						value={contact.name}
 						onChange={handleChange}
 						onBlur={handleFocused}
-						onFocus={() => (contact.name = 'message' && setFocused(true))}
 						focused={focused.toString()}
 						required
 						className='input'
 					/>
-					{error && <CgDanger className='icon' />}
-					{error && <span className='error'>Sorry, name is required!</span>}
-				</div>
-				<div className='form-group'>
+
+					{!error && <CgDanger className='icon' />}
+					{!error && <span className='error'>Sorry, name is required!</span>}
+				</StyledFormGroup>
+				<StyledFormGroup>
 					<input
 						type='email'
 						name='email'
@@ -81,14 +73,13 @@ const Form = () => {
 						value={contact.email}
 						onChange={handleChange}
 						onBlur={handleFocused}
-						onFocus={() => (contact.name = 'message' && setFocused(true))}
 						focused={focused.toString()}
 						className='input'
 					/>
-					{error && <CgDanger className='icon' />}
-					{error && <span className='error'>Sorry, invalid format here</span>}
-				</div>
-				<div className='form-group'>
+					{!error && <CgDanger className='icon' />}
+					{!error && <span className='error'>Sorry, invalid format here</span>}
+				</StyledFormGroup>
+				<StyledFormGroup>
 					<textarea
 						type='text'
 						name='message'
@@ -98,18 +89,17 @@ const Form = () => {
 						value={contact.message}
 						onChange={handleChange}
 						onBlur={handleFocused}
-						onFocus={() => (contact.name = 'message' && setFocused(true))}
+						onFocus={() => {
+							contact.name === 'message' && setFocused(true)
+						}}
 						focused={focused.toString()}
 						required
 						className='textArea'
 					/>
-					{error && <CgDanger className='icon' />}
-					{error && <span className='error'> Please how can I help?</span>}
-				</div>
-
-				<StyledButton type='submit' className='submit'>
-					Send message
-				</StyledButton>
+					{!error && <CgDanger className='icon' />}
+					{!error && <span className='error'> Please how can I help?</span>}
+				</StyledFormGroup>
+				<Button />
 			</StyledForm>
 		</StyledFormWrapper>
 	)
