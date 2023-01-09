@@ -16,7 +16,9 @@ import StyledFlex from './Flex.styled'
 import StyledProject from './SingleProject.styled'
 import StyledFooter from './Footer.styled'
 import StyledFormWrapper from './FormWrapper.Styled'
+import StyledFormintro from './FormIntro.Styled'
 import StyledForm from './Form.Styled'
+import StyledFormGroup from './Formgroup.styled'
 import StyledButton from './Button.styled'
 import StyledSecNav from './SecNav.styled'
 
@@ -39,7 +41,9 @@ export {
 	StyledProject,
 	StyledFooter,
 	StyledFormWrapper,
+	StyledFormintro,
 	StyledForm,
+	StyledFormGroup,
 	StyledButton,
 	StyledSecNav,
 }
