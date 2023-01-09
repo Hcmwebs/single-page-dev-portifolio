@@ -15,6 +15,7 @@ const Form = () => {
 	})
 	const [contacts, setContacts] = useState([])
 	const [error, setError] = useState(true)
+
 	const [focused, setFocused] = useState(false)
 
 	const handleFocused = () => {
@@ -29,14 +30,18 @@ const Form = () => {
 
 	const handleSubmit = (e) => {
 		e.preventDefault()
+		console.log(contact)
 		if (contact.name && contact.email && contact.message) {
 			setError(false)
 			const newContact = { ...contact, id: new Date().getTime().toString() }
 			setContacts([...contacts, newContact])
 			setContact({ name: '', email: '', message: '' })
 			setFocused(false)
+		} else {
+			setError(true)
 		}
 	}
+
 	return (
 		<StyledFormWrapper>
 			<div className='intro'>
@@ -54,31 +59,30 @@ const Form = () => {
 						type='text'
 						name='name'
 						id='name'
-						placeholder='Name'
+						placeholder='name'
 						aria-label='name'
 						value={contact.name}
 						onChange={handleChange}
 						onBlur={handleFocused}
+						onFocus={() => contact.name === 'name' && setFocused(true)}
 						focused={focused.toString()}
-						onFocus={() => setFocused(false)}
 						required
 					/>
 					{error && <CgDanger className='icon' />}
-					{error && <span className='error'>Please, provide a name!</span>}
+					{error && <span className='error'>Sorry, name is required!</span>}
 				</div>
-
 				<div className='form-group'>
 					<input
 						type='email'
 						name='email'
 						id='email'
-						placeholder=' Email'
+						placeholder=' email'
 						aria-label='email'
 						required
 						value={contact.email}
 						onChange={handleChange}
 						onBlur={handleFocused}
-						onFocus={() => setFocused(false)}
+						onFocus={() => contact.name === 'email' && setFocused(true)}
 						focused={focused.toString()}
 					/>
 					{error && <CgDanger className='icon' />}
@@ -86,20 +90,22 @@ const Form = () => {
 				</div>
 				<div className='form-group'>
 					<textarea
+						type='text'
 						name='message'
 						id='message'
-						placeholder='Message'
+						placeholder='message'
 						aria-label='message'
 						value={contact.message}
 						onChange={handleChange}
-						onFocus={handleFocused}
 						onBlur={handleFocused}
+						onFocus={() => contact.name === 'message' && setFocused(true)}
 						focused={focused.toString()}
 						required
 					/>
-					{!error && <CgDanger className='icon' />}
-					{!error && <span className='error'> Please how can I help?</span>}
+					{error && <CgDanger className='icon' />}
+					{error && <span className='error'> Please how can I help?</span>}
 				</div>
+
 				<StyledButton type='submit' className='submit'>
 					Send message
 				</StyledButton>
