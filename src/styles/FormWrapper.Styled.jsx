@@ -11,18 +11,7 @@ const StyledFormWrapper = styled.div`
 		flex-direction: row;
 	}
 
-	.intro {
-		width: min(100%, 445px);
-		display: grid;
-		place-items: center;
-		text-align: center;
-		gap: 1.25rem;
-
-		@media (min-width: 1440px) {
-			text-align: left;
-			align-self: start;
-		}
-	}
+	
 `
 
 export default StyledFormWrapper
