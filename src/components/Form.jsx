@@ -15,7 +15,6 @@ const Form = () => {
 	})
 	const [contacts, setContacts] = useState([])
 	const [error, setError] = useState(true)
-
 	const [focused, setFocused] = useState(false)
 
 	const handleFocused = () => {
@@ -30,7 +29,6 @@ const Form = () => {
 
 	const handleSubmit = (e) => {
 		e.preventDefault()
-		console.log(contact)
 		if (contact.name && contact.email && contact.message) {
 			setError(false)
 			const newContact = { ...contact, id: new Date().getTime().toString() }
@@ -64,9 +62,10 @@ const Form = () => {
 						value={contact.name}
 						onChange={handleChange}
 						onBlur={handleFocused}
-						onFocus={() => contact.name === 'name' && setFocused(true)}
+						onFocus={() => (contact.name = 'message' && setFocused(true))}
 						focused={focused.toString()}
 						required
+						className='input'
 					/>
 					{error && <CgDanger className='icon' />}
 					{error && <span className='error'>Sorry, name is required!</span>}
@@ -82,8 +81,9 @@ const Form = () => {
 						value={contact.email}
 						onChange={handleChange}
 						onBlur={handleFocused}
-						onFocus={() => contact.name === 'email' && setFocused(true)}
+						onFocus={() => (contact.name = 'message' && setFocused(true))}
 						focused={focused.toString()}
+						className='input'
 					/>
 					{error && <CgDanger className='icon' />}
 					{error && <span className='error'>Sorry, invalid format here</span>}
@@ -98,9 +98,10 @@ const Form = () => {
 						value={contact.message}
 						onChange={handleChange}
 						onBlur={handleFocused}
-						onFocus={() => contact.name === 'message' && setFocused(true)}
+						onFocus={() => (contact.name = 'message' && setFocused(true))}
 						focused={focused.toString()}
 						required
+						className='textArea'
 					/>
 					{error && <CgDanger className='icon' />}
 					{error && <span className='error'> Please how can I help?</span>}
@@ -110,17 +111,6 @@ const Form = () => {
 					Send message
 				</StyledButton>
 			</StyledForm>
-
-			{contacts.map((contact) => {
-				const { id, name, email, message } = contact
-				return (
-					<div key={id}>
-						<h4>{name}</h4>
-						<h5>{email}</h5>
-						<p>{message}</p>
-					</div>
-				)
-			})}
 		</StyledFormWrapper>
 	)
 }
