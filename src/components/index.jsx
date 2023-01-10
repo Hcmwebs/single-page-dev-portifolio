@@ -10,6 +10,7 @@ import Projects from './Projects'
 import SingleProject from './SingleProject'
 import Footer from './Footer'
 import Form from './Form'
+import FormSpree from './FormSpree'
 import FormIntro from './FormIntro'
 import Button from './Button'
 import SecNav from './SecNav'
@@ -27,6 +28,7 @@ export {
 	SingleProject,
 	Footer,
 	Form,
+  FormSpree,
 	FormIntro,
 	Button,
 	SecNav,

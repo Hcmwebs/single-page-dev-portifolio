@@ -1,11 +1,7 @@
 import React, { useState } from 'react'
 import { CgDanger } from 'react-icons/cg'
-import { FormIntro, Button } from './index'
-import {
-	StyledForm,
-	StyledFormGroup,
-	StyledFormWrapper,
-} from '../styles'
+import { FormIntro, Button, FormSpree } from './index'
+import { StyledForm, StyledFormGroup, StyledFormWrapper } from '../styles'
 
 const Form = () => {
 	const [contact, setContact] = useState({
@@ -43,7 +39,11 @@ const Form = () => {
 	return (
 		<StyledFormWrapper>
 			<FormIntro />
-			<StyledForm onSubmit={handleSubmit}>
+      <FormSpree />
+			<StyledForm
+				onSubmit={handleSubmit}
+				action='https://formspree.io/f/mzbqbynw'
+				method='POST'>
 				<StyledFormGroup>
 					<input
 						type='text'
@@ -101,6 +101,8 @@ const Form = () => {
 				</StyledFormGroup>
 				<Button />
 			</StyledForm>
+
+
 		</StyledFormWrapper>
 	)
 }
