@@ -29,7 +29,6 @@ const Form = () => {
 			setError(false)
 			const newContact = { ...contact, id: new Date().getTime().toString() }
 			setContacts([...contacts, newContact])
-
 			setContact({ name: '', email: '', message: '' })
 			setFocused(false)
 		} else {
@@ -41,7 +40,7 @@ const Form = () => {
 		<StyledFormWrapper>
 			<FormIntro />
 
-			<StyledForm action='https://formspree.io/f/mzbqbynw' method='POST'>
+			<StyledForm onSubmit={handleSubmit}>
 				<StyledFormGroup>
 					<input
 						type='text'
@@ -97,7 +96,7 @@ const Form = () => {
 					{!error && <CgDanger className='icon' />}
 					{!error && <span className='error'> Please how can I help?</span>}
 				</StyledFormGroup>
-				<Button type = 'submit'/>
+				<Button type='submit' />
 			</StyledForm>
 		</StyledFormWrapper>
 	)
