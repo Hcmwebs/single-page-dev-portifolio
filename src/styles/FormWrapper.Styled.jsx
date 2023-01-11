@@ -11,7 +11,6 @@ const StyledFormWrapper = styled.div`
 		flex-direction: row;
 	}
 
-	
 `
 
 export default StyledFormWrapper

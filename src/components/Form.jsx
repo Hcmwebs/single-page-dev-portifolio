@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { CgDanger } from 'react-icons/cg'
-import { FormIntro, Button} from './index'
+import { FormIntro, Button } from './index'
 import { StyledForm, StyledFormGroup, StyledFormWrapper } from '../styles'
 
 const Form = () => {
@@ -29,6 +29,7 @@ const Form = () => {
 			setError(false)
 			const newContact = { ...contact, id: new Date().getTime().toString() }
 			setContacts([...contacts, newContact])
+
 			setContact({ name: '', email: '', message: '' })
 			setFocused(false)
 		} else {
@@ -40,10 +41,7 @@ const Form = () => {
 		<StyledFormWrapper>
 			<FormIntro />
 
-			<StyledForm
-				onSubmit={handleSubmit}
-				action='https://formspree.io/f/mzbqbynw'
-				method='POST'>
+			<StyledForm action='https://formspree.io/f/mzbqbynw' method='POST'>
 				<StyledFormGroup>
 					<input
 						type='text'
@@ -99,10 +97,8 @@ const Form = () => {
 					{!error && <CgDanger className='icon' />}
 					{!error && <span className='error'> Please how can I help?</span>}
 				</StyledFormGroup>
-				<Button />
+				<Button type = 'submit'/>
 			</StyledForm>
-
-
 		</StyledFormWrapper>
 	)
 }
