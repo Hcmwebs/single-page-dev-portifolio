@@ -81,7 +81,6 @@ const Form = () => {
 				<StyledFormGroup>
 					<label htmlFor='message'></label>
 					<textarea
-						type='textarea'
 						name='message'
 						id='message'
 						placeholder='message'
