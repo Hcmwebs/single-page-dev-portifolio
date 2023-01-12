@@ -7,7 +7,7 @@ import MainBody from './MainBody'
 import Skills from './Skills'
 import SingleSkill from './SingleSkill'
 import Projects from './Projects'
-import SingleProject from './SingleProject'
+import Singleproject from './Singleproject'
 import Footer from './Footer'
 import Form from './Form'
 import FormIntro from './FormIntro'
@@ -24,7 +24,7 @@ export {
 	Skills,
 	SingleSkill,
 	Projects,
-	SingleProject,
+	Singleproject,
 	Footer,
 	Form,
 	FormIntro,

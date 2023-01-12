@@ -1,6 +1,6 @@
 import React from 'react'
 import { projects } from '../data/Data'
-import { SingleProject } from './index'
+import { Singleproject } from './index'
 import { StyledTitle, StyledLink, StyledSection, StyledFlex } from '../styles'
 
 const Projects = () => {
@@ -17,7 +17,7 @@ const Projects = () => {
 
 			<div className='items projects'>
 				{projects.map((project) => {
-					return <SingleProject key={project.id} {...project} />
+					return <Singleproject key={project.id} {...project} />
 				})}
 			</div>
 		</StyledSection>
