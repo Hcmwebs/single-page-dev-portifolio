@@ -14,26 +14,21 @@ const SingleProject = ({
 		<StyledProject key={id}>
 			<div className='overlay'>
 				<StyledFlex className='links'>
-					<StyledLink href={live} target='_blank' rel='noopener noreferrer'>
+					<StyledLink href='#' target='_blank' rel='noopener noreferrer'>
 						{live}
 					</StyledLink>
-					<StyledLink href={code} target='_blank' rel='noopener noreferrer'>
+					<StyledLink href='#' target='_blank' rel='noopener noreferrer'>
 						{code}
 					</StyledLink>
 				</StyledFlex>
 			</div>
 			<picture>
-				<source
-					srcSet={imageLarge}
-					media='(min-width: 768px)'
-					type='image/webp'
-				/>
+				<source srcSet={imageLarge} media='(min-width: 768px)' />
 				<source
 					srcSet={imageSmall}
 					media='(min-width: 300px) and (max-width:767px) '
-					type='image/webp'
 				/>
-				<img src={imageSmall} alt={title} type='image/webp' />
+				<img src={imageSmall} alt={title} />
 			</picture>
 
 			<div className='cardBody'>
