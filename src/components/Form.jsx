@@ -80,7 +80,7 @@ const Form = () => {
 				</StyledFormGroup>
 				<StyledFormGroup>
 					<label htmlFor='message'></label>
-					<textarea
+					<input
 						type='text'
 						name='message'
 						id='message'
@@ -94,7 +94,7 @@ const Form = () => {
 						}}
 						focused={focused.toString()}
 						required
-						className='textArea'
+						className='input textArea'
 					/>
 					{!error && <CgDanger className='icon' />}
 					{!error && <span className='error'> Please how can I help?</span>}
