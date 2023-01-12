@@ -53,6 +53,9 @@ const Form = () => {
 						onChange={handleChange}
 						onBlur={handleFocused}
 						focused={focused.toString()}
+						onFocus={() => {
+							contact.name === 'message' && setFocused(true)
+						}}
 						required
 						className='input'
 					/>
@@ -73,6 +76,9 @@ const Form = () => {
 						onChange={handleChange}
 						onBlur={handleFocused}
 						focused={focused.toString()}
+						onFocus={() => {
+							setFocused(false)
+						}}
 						className='input'
 					/>
 					{!error && <CgDanger className='icon' />}
