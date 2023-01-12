@@ -9,7 +9,8 @@ const StyledFormgroup = styled.div`
 	transition: var(--transition-2);
 	position: relative;
 
-	.input {
+	.input,
+	.textArea {
 		font-size: 1rem;
 		font-weight: var(--medium);
 		line-height: 26px;
