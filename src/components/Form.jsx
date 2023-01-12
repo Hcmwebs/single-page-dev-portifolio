@@ -90,9 +90,8 @@ const Form = () => {
 						onChange={handleChange}
 						onBlur={handleFocused}
 						onFocus={() => {
-							contact.name === 'message' && setFocused(true)
+							setFocused(true)
 						}}
-						focused={focused.toString()}
 						required
 						className='textArea'
 					/>
