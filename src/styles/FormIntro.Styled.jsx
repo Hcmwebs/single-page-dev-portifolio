@@ -10,6 +10,7 @@ const StyledFormintro = styled.div`
 	@media (min-width: 1440px) {
 		text-align: left;
 		align-self: start;
+		gap: 2.25rem;
 	}
 `
 export default StyledFormintro
