@@ -35,10 +35,10 @@ const SingleProject = ({
 				<h2>{title}</h2>
 				<p>{skills}</p>
 				<StyledFlex jc='space-between' align='center' className='footer'>
-					<StyledLink href={live} target='_blank' rel='noopener noreferrer'>
+					<StyledLink href='#' target='_blank' rel='noopener noreferrer'>
 						{live}
 					</StyledLink>
-					<StyledLink href={code} target='_blank' rel='noopener noreferrer'>
+					<StyledLink href='#' target='_blank' rel='noopener noreferrer'>
 						{code}
 					</StyledLink>
 				</StyledFlex>
