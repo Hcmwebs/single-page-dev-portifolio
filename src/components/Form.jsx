@@ -52,6 +52,7 @@ const Form = () => {
 						value={contact.name}
 						onChange={handleChange}
 						onBlur={handleFocused}
+						onFocus={() => contact.name === 'message' && setFocused(true)}
 						focused={focused.toString()}
 						onFocus={() => {
 							contact.name === 'message' && setFocused(true)
@@ -75,6 +76,7 @@ const Form = () => {
 						value={contact.email}
 						onChange={handleChange}
 						onBlur={handleFocused}
+						onFocus={() => contact.name === 'message' && setFocused(true)}
 						focused={focused.toString()}
 						onFocus={() => {
 							setFocused(false)
@@ -94,6 +96,8 @@ const Form = () => {
 						value={contact.message}
 						onChange={handleChange}
 						onBlur={handleFocused}
+						onFocus={() => contact.name === 'message' && setFocused(true)}
+						focused={focused.toString()}
 						onFocus={() => {
 							setFocused(true)
 						}}

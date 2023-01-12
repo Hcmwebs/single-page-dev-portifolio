@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const StyledProject = styled.div`
+const Styledproject = styled.div`
 	width: 343px;
 	min-height: 450px;
 	display: grid;
@@ -53,4 +53,4 @@ const StyledProject = styled.div`
 	}
 `
 
-export default StyledProject
+export default Styledproject

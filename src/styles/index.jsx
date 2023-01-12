@@ -4,19 +4,19 @@ import StyledCircle from './Circle.styled'
 import GlobalStyles from './GlobalStyles'
 import theme from './Themes.styled'
 import StyledHeader from './Header.styled'
-import StyledNav from './Nav.Styled'
+import StyledNav from './Nav.styled'
 import StyledLogo from './Logo.styled'
-import StyledSocials from './Socials.Styled'
-import StyledHero from './Hero.Styled'
+import StyledSocials from './Socials.styled'
+import StyledHero from './Hero.styled'
 import StyledTitle from './Title.styled'
 import StyledLink from './Link.styled'
 import StyledMain from './Main.styled'
 import StyledSection from './Section.styled'
 import StyledFlex from './Flex.styled'
-import StyledProject from './SingleProject.styled'
+import Styledproject from './Singleproject.styled'
 import StyledFooter from './Footer.styled'
-import StyledFormWrapper from './FormWrapper.Styled'
-import StyledFormintro from './FormIntro.Styled'
+import StyledFormWrapper from './FormWrapper.styled'
+import StyledFormintro from './FormIntro.styled'
 import StyledForm from './Form.styled'
 import StyledFormGroup from './Formgroup.styled'
 import StyledButton from './Button.styled'
@@ -38,7 +38,7 @@ export {
 	StyledLink,
 	StyledMain,
 	StyledSection,
-	StyledProject,
+	Styledproject,
 	StyledFooter,
 	StyledFormWrapper,
 	StyledFormintro,
