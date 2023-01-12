@@ -23,7 +23,7 @@ const StyledNav = styled.nav`
 		}
 	}
 	.icon > path {
-		color: ${({ theme }) => theme.darkTheme.header};
+		color: var(--headingColor);
 	}
 `
 export default StyledNav
