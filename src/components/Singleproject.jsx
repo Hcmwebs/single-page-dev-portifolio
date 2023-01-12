@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyledFlex, StyledLink, StyledProject } from '../styles'
+import { StyledFlex, StyledLink, Styledproject } from '../styles'
 
 const SingleProject = ({
 	id,
@@ -11,7 +11,7 @@ const SingleProject = ({
 	skills,
 }) => {
 	return (
-		<StyledProject key={id}>
+		<Styledproject key={id}>
 			<div className='overlay'>
 				<StyledFlex className='links'>
 					<StyledLink href={live} target='_blank' rel='noopener noreferrer'>
@@ -48,7 +48,7 @@ const SingleProject = ({
 					</StyledLink>
 				</StyledFlex>
 			</div>
-		</StyledProject>
+		</Styledproject>
 	)
 }
 
