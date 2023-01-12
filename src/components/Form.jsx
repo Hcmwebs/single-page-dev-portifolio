@@ -54,9 +54,6 @@ const Form = () => {
 						onBlur={handleFocused}
 						onFocus={() => contact.name === 'message' && setFocused(true)}
 						focused={focused.toString()}
-						onFocus={() => {
-							contact.name === 'message' && setFocused(true)
-						}}
 						required
 						className='input'
 					/>
@@ -78,9 +75,6 @@ const Form = () => {
 						onBlur={handleFocused}
 						onFocus={() => contact.name === 'message' && setFocused(true)}
 						focused={focused.toString()}
-						onFocus={() => {
-							setFocused(false)
-						}}
 						className='input'
 					/>
 					{!error && <CgDanger className='icon' />}
@@ -98,9 +92,6 @@ const Form = () => {
 						onBlur={handleFocused}
 						onFocus={() => contact.name === 'message' && setFocused(true)}
 						focused={focused.toString()}
-						onFocus={() => {
-							setFocused(true)
-						}}
 						required
 						className='textArea'
 					/>
