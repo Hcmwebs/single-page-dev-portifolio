@@ -6,6 +6,8 @@ const StyledForm = styled.form`
 	place-items: center;
 	padding-bottom: 5.75rem;
 	gap: 2rem;
+
+
 `
 
 export default StyledForm

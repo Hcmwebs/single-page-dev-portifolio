@@ -40,8 +40,9 @@ const Form = () => {
 		<StyledFormWrapper>
 			<FormIntro />
 
-			<StyledForm onSubmit={handleSubmit}>
+			<StyledForm action='https://formspree.io/f/mzbqbynw' method='POST'>
 				<StyledFormGroup>
+					<label htmlFor='name'></label>
 					<input
 						type='text'
 						name='name'
@@ -60,6 +61,7 @@ const Form = () => {
 					{!error && <span className='error'>Sorry, name is required!</span>}
 				</StyledFormGroup>
 				<StyledFormGroup>
+					<label htmlFor='email'></label>
 					<input
 						type='email'
 						name='email'
@@ -77,6 +79,7 @@ const Form = () => {
 					{!error && <span className='error'>Sorry, invalid format here</span>}
 				</StyledFormGroup>
 				<StyledFormGroup>
+					<label htmlFor='message'></label>
 					<textarea
 						type='text'
 						name='message'
