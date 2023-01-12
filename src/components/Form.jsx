@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { CgDanger } from 'react-icons/cg'
-import { FormIntro, Button } from './index'
-import { StyledForm, StyledFormGroup, StyledFormWrapper } from '../styles'
+import { Button } from './index'
+import { StyledForm, StyledFormGroup } from '../styles'
 
 const Form = () => {
 	const [contact, setContact] = useState({
@@ -37,70 +37,66 @@ const Form = () => {
 	}
 
 	return (
-		<StyledFormWrapper>
-			<FormIntro />
+		<StyledForm action='https://formspree.io/f/mzbqbynw' method='POST'>
+			<StyledFormGroup>
+				<label htmlFor='name'></label>
+				<input
+					type='text'
+					name='name'
+					id='name'
+					placeholder='name'
+					aria-label='name'
+					value={contact.name}
+					onChange={handleChange}
+					onBlur={handleFocused}
+					onFocus={() => contact.name === 'message' && setFocused(true)}
+					focused={focused.toString()}
+					required
+					className='input'
+				/>
 
-			<StyledForm action='https://formspree.io/f/mzbqbynw' method='POST'>
-				<StyledFormGroup>
-					<label htmlFor='name'></label>
-					<input
-						type='text'
-						name='name'
-						id='name'
-						placeholder='name'
-						aria-label='name'
-						value={contact.name}
-						onChange={handleChange}
-						onBlur={handleFocused}
-						onFocus={() => contact.name === 'message' && setFocused(true)}
-						focused={focused.toString()}
-						required
-						className='input'
-					/>
-
-					{!error && <CgDanger className='icon' />}
-					{!error && <span className='error'>Sorry, name is required!</span>}
-				</StyledFormGroup>
-				<StyledFormGroup>
-					<label htmlFor='email'></label>
-					<input
-						type='email'
-						name='email'
-						id='email'
-						placeholder=' email'
-						aria-label='email'
-						required
-						value={contact.email}
-						onChange={handleChange}
-						onBlur={handleFocused}
-						onFocus={() => contact.name === 'message' && setFocused(true)}
-						focused={focused.toString()}
-						className='input'
-					/>
-					{!error && <CgDanger className='icon' />}
-					{!error && <span className='error'>Sorry, invalid format here</span>}
-				</StyledFormGroup>
-				<StyledFormGroup>
-					<label htmlFor='message'></label>
-					<textarea
-						name='message'
-						id='message'
-						placeholder='message'
-						aria-label='message'
-						value={contact.message}
-						onChange={handleChange}
-						onBlur={handleFocused}
-						onFocus={() => contact.name === 'message' && setFocused(true)}
-						focused={focused.toString()}
-						required
-						className='textArea'
-					/>
-					{!error && <CgDanger className='icon' />}
-					{!error && <span className='error'> Please how can I help?</span>}
-				</StyledFormGroup>
-				<Button type='submit' />
-			</StyledForm>
-		</StyledFormWrapper>
+				{!error && <CgDanger className='icon' />}
+				{!error && <span className='error'>Sorry, name is required!</span>}
+			</StyledFormGroup>
+			<StyledFormGroup>
+				<label htmlFor='email'></label>
+				<input
+					type='email'
+					name='email'
+					id='email'
+					placeholder=' email'
+					aria-label='email'
+					required
+					value={contact.email}
+					onChange={handleChange}
+					onBlur={handleFocused}
+					onFocus={() => contact.name === 'message' && setFocused(true)}
+					focused={focused.toString()}
+					className='input'
+				/>
+				{!error && <CgDanger className='icon' />}
+				{!error && <span className='error'>Sorry, invalid format here</span>}
+			</StyledFormGroup>
+			<StyledFormGroup>
+				<label htmlFor='message'></label>
+				<textarea
+					name='message'
+					id='message'
+					placeholder='message'
+					aria-label='message'
+					value={contact.message}
+					onChange={handleChange}
+					onBlur={handleFocused}
+					onFocus={() => contact.name === 'message' && setFocused(true)}
+					focused={focused.toString()}
+					required
+					className='textArea'
+				/>
+				{!error && <CgDanger className='icon' />}
+				{!error && <span className='error'> Please how can I help?</span>}
+			</StyledFormGroup>
+			<Button type='submit' />
+		</StyledForm>
 	)
 }
 
