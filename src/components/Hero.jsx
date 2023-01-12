@@ -8,23 +8,17 @@ const Hero = () => {
 	return (
 		<StyledHero>
 			<picture>
-				<source
-					srcSet={profileLarge}
-					media='(min-width: 1440px)'
-					type='image/webp'
-				/>
+				<source srcSet={profileLarge} media='(min-width: 1440px)' />
 				<source
 					srcSet={profileMedium}
 					media='(min-width: 768px) and (max-width:1439px) '
-					type='image/webp'
 				/>
 				<source
 					srcSet={profileSmall}
 					media='(min-width: 300px) and (max-width:767px) '
-					type='image/webp'
 				/>
 
-				<img src={profileSmall} alt='profile' type='image/webp' />
+				<img src={profileSmall} alt='profile' />
 			</picture>
 
 			<div className='hero-body'>
