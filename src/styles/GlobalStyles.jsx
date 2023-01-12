@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components'
 const GlobalStyles = createGlobalStyle`
 
 
-@import url('https://fonts.googleapis.com/css?family=Space+Grotesk:500,700');
+
 
 :root{
 
