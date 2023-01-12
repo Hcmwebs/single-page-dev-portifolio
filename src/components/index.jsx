@@ -9,8 +9,9 @@ import SingleSkill from './SingleSkill'
 import Projects from './Projects'
 import Singleproject from './Singleproject'
 import Footer from './Footer'
-import Form from './Form'
+import FormWrapper from './FormWrapper'
 import FormIntro from './FormIntro'
+import Form from './Form'
 import Button from './Button'
 import SecNav from './SecNav'
 
@@ -26,8 +27,9 @@ export {
 	Projects,
 	Singleproject,
 	Footer,
-	Form,
+	FormWrapper,
 	FormIntro,
+	Form,
 	Button,
 	SecNav,
 }

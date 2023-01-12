@@ -1,5 +1,5 @@
 import React from 'react'
-import { Form, SecNav } from './index'
+import { Form, FormWrapper, SecNav } from './index'
 import { Container, StyledFooter, StyledRings } from '../styles'
 
 const Footer = () => {
@@ -7,7 +7,7 @@ const Footer = () => {
 		<StyledFooter>
 			<Container>
 				<StyledRings className='footer' />
-				<Form />
+				<FormWrapper />
 				<hr />
 				<SecNav />
 			</Container>
