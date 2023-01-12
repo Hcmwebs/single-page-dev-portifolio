@@ -4,7 +4,10 @@ import { StyledSocials } from '../styles'
 const Socials = () => {
 	return (
 		<StyledSocials>
-			<a href='#' target='_blank' rel='noopener noreferrer'>
+			<a
+				href='https://github.com/Hcmwebs'
+				target='_blank'
+				rel='noopener noreferrer'>
 				<svg
 					className='icon'
 					xmlns='http://www.w3.org/2000/svg'
@@ -17,7 +20,10 @@ const Socials = () => {
 				</svg>
 			</a>
 
-			<a href='#' target='_blank' rel='noopener noreferrer'>
+			<a
+				href='https://www.frontendmentor.io/profile/Hcmwebs'
+				target='_blank'
+				rel='noopener noreferrer'>
 				<svg
 					className='icon'
 					xmlns='http://www.w3.org/2000/svg'
@@ -42,7 +48,10 @@ const Socials = () => {
 					/>
 				</svg>
 			</a>
-			<a href='#' target='_blank' rel='noopener noreferrer'>
+			<a
+				href='https://www.twitter.com/hcmwebs'
+				target='_blank'
+				rel='noopener noreferrer'>
 				<svg
 					className='icon'
 					xmlns='http://www.w3.org/2000/svg'
