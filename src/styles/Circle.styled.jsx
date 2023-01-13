@@ -15,11 +15,11 @@ const StyledCircle = styled.div`
 		left: 311px;
 		@media (min-width: 768px) {
 			top: 470px;
-			left: 700px;
+			left: 320px;
 		}
 		@media (min-width: 1440px) {
 			top: 521px;
-			left: 581px;
+			left: 750px;
 		}
 	}
 `
