@@ -7,6 +7,9 @@ const StyledSection = styled.section`
 	display: grid;
 	place-items: center;
 	gap: 2.5rem;
+	&.skills{
+		padding-top: 0;
+	}
 	@media (min-width: 768px) {
 		padding-block: 4rem;
 		gap: 3.75rem;
