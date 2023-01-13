@@ -25,7 +25,7 @@ const StyledRings = styled.div`
 		}
 	}
 	&.main {
-		top: 705px;
+		top: 650px;
 		left: 189px;
 		@media (min-width: 768px) {
 			top: 450px;
