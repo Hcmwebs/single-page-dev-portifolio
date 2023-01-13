@@ -10,7 +10,7 @@ const StyledRings = styled.div`
 	background-position: center center;
 	background-image: url('/pattern-rings.svg');
 	mix-blend-mode: normal;
-	opacity: 0.25;
+	opacity: 0.5;
 
 	&.header {
 		top: 125px;
