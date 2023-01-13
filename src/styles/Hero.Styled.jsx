@@ -32,7 +32,6 @@ const StyledHero = styled.div`
 
 	.hero-body {
 		width: 100%;
-		padding-inline: 1rem;
 		margin-top: -7rem;
 		display: grid;
 		justify-content: center;
