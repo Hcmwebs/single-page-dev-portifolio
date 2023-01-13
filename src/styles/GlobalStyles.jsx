@@ -96,6 +96,10 @@ a{
   display: grid;
   place-items: center;
   gap: 0.2rem;
+  margin:0 auto;
+  @media (min-width:740px){
+    margin: 0 0;
+  }
   .underline{
     content: '';
     width: 100%;
