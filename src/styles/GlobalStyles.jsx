@@ -100,7 +100,7 @@ a{
     content: '';
     width: 100%;
     height: 0.20rem;
-    background:var(--accent)s
+    background:var(--accent)
   }
 }
 
