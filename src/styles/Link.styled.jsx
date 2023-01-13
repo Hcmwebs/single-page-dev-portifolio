@@ -17,6 +17,9 @@ const StyledLink = styled.a`
 	position: relative;
 	cursor: pointer;
 	transition: var(--transition-2);
+	&.projects-link {
+		margin: 0 0;
+	}
 	@media (min-width: 768px) {
 		text-align: left;
 		margin: 0 0;
