@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 const StyledLink = styled.a`
 	width: max-content;
+	margin: 0 auto;
 	height: 1.75rem;
 	font-weight: 700;
 	font-size: 1rem;
@@ -18,6 +19,7 @@ const StyledLink = styled.a`
 	transition: var(--transition-2);
 	@media (min-width: 768px) {
 		text-align: left;
+		margin: 0 0;
 	}
 	&:hover {
 		color: var(--accent);
