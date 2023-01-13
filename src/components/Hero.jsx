@@ -24,7 +24,10 @@ const Hero = () => {
 			<div className='hero-body'>
 				<h1>
 					Nice to meet you! I'm
-					<span> Adam Keyes.</span>
+					<span className='title'>
+						Adam Keyes.
+						<div className='underline'></div>
+					</span>
 				</h1>
 				<p>
 					Based in the UK, I'm a front-end developer passionate about building

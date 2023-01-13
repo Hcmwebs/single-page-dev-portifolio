@@ -90,6 +90,21 @@ a{
   color: var(--headingColor)
 }
 
+.title{
+  width: max-content;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  gap: 0.2rem;
+  .underline{
+    content: '';
+    width: 100%;
+    height: 0.20rem;
+    background:var(--accent)s
+  }
+}
+
+
 `
 
 export default GlobalStyles

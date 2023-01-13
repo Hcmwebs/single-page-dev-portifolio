@@ -66,29 +66,6 @@ const StyledHero = styled.div`
 				line-height: 88px;
 				letter-spacing: -2.5px;
 			}
-			span {
-				position: relative;
-
-				&::before {
-					content: '';
-					width: 220px;
-					height: 4px;
-					background-color: var(--accent);
-					position: absolute;
-					bottom: -0.2rem;
-					left: 10px;
-
-					@media (min-width: 768px) {
-						width: 385px;
-						height: 6px;
-						left: -242px;
-					}
-					@media (min-width: 1440px) {
-						width: 470px;
-						left: -300px;
-					}
-				}
-			}
 		}
 
 		p {
