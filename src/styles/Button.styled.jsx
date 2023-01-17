@@ -17,6 +17,7 @@ const StyledButton = styled.button`
 	cursor: pointer;
 	border: none;
 	outline: none;
+	color: var(--headingColor);
 	background-color: transparent;
 	transition: var(--transition-2);
 

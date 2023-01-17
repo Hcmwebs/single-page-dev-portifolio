@@ -14,6 +14,7 @@ const StyledLink = styled.a`
 	display: grid;
 	place-items: center;
 	justify-items: start;
+	color:var(--headingColor);
 	position: relative;
 	cursor: pointer;
 	transition: var(--transition-2);
