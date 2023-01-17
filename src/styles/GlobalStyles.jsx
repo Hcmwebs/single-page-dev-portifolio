@@ -35,10 +35,9 @@ const GlobalStyles = createGlobalStyle`
 
 
 html {
-  font-size: 100%;
-  color-scheme: dark light;
+  font-size: 100%; /*16px*/
   height: 100%;
-} /*16px*/
+}
 
 body {
   font-family: 'Space Grotesk', sans-serif;
