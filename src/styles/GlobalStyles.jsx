@@ -36,6 +36,7 @@ const GlobalStyles = createGlobalStyle`
 
 html {
   font-size: 100%; /*16px*/
+  color-scheme: dark light;
   height: 100%;
 }
 
